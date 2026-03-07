@@ -85,7 +85,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
             { icon: Shield, title: "Segurança", desc: "Sistemas avançados de monitoramento e proteção que reduzem incidentes e protegem operadores em campo." },
-            { icon: Gauge, title: "Eficiência", desc: "Tecnologia que otimiza ciclos de transporte, consumo de combustível e tempo de operação." },
+            { icon: Gauge, title: "Eficiência", desc: "Tecnologia que otimiza ciclos de transporte, consumo de combustível e tempo de operação. Despacho inteligente embarcado de fábrica." },
             { icon: Wrench, title: "Robustez", desc: "Equipamentos projetados para suportar as condições mais severas de operação em minas a céu aberto." }].
             map(({ icon: Icon, title, desc }) =>
             <div key={title} className="bg-card border border-border p-8 group hover:border-primary/50 transition-colors">
