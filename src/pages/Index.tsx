@@ -199,7 +199,7 @@ const Index = () => {
             Converse com nossa equipe de engenharia
           </h2>
           <p className="text-muted-foreground mb-8">
-            Entre em contato para avaliar como a tecnologia ALTian pode ser aplicada à sua operação de mineração.
+            Entre em contato para avaliar como a tecnologia Altian pode ser aplicada à sua operação de mineração.
           </p>
           <Link
             to="/contato"

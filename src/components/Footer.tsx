@@ -40,7 +40,7 @@ const Footer = () => (
 
       <div className="mt-12 pt-6 border-t border-border text-center">
         <p className="text-xs text-muted-foreground">
-          © {new Date().getFullYear()} ALTian. Todos os direitos reservados.
+          © {new Date().getFullYear()} Altian. Todos os direitos reservados.
         </p>
       </div>
     </div>
