@@ -18,26 +18,26 @@ const Index = () => {
         <div className="relative z-10 max-w-7xl mx-auto section-padding">
           <div className="max-w-2xl">
             <div className="inline-block bg-primary/10 border border-primary/30 px-3 py-1 mb-6">
-              <span className="text-primary text-xs font-semibold tracking-widest uppercase">Representante Boonray no Brasil</span>
+              <span className="text-primary text-xs font-semibold tracking-widest uppercase">CAMIHÕES AUTÔNOMOS ELÉTRICOS NO BRASIL</span>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
               Tecnologia que protege vidas e aumenta a produtividade na mineração
             </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl">
-              Caminhões off-road de alta capacidade e tecnologia avançada para operações de mineração de grande escala.
+            <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl">Caminhões off-road de alta capacidade e tecnologia avançada para operações de mineração.
+
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contato"
-                className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-3.5 font-heading font-semibold text-sm tracking-wide hover:opacity-90 transition-opacity"
-              >
+                className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-3.5 font-heading font-semibold text-sm tracking-wide hover:opacity-90 transition-opacity">
+                
                 Falar com nossa equipe técnica
                 <ChevronRight size={18} className="ml-2" />
               </Link>
               <Link
                 to="/contato"
-                className="inline-flex items-center justify-center border border-border text-foreground px-8 py-3.5 font-heading font-semibold text-sm tracking-wide hover:bg-secondary transition-colors"
-              >
+                className="inline-flex items-center justify-center border border-border text-foreground px-8 py-3.5 font-heading font-semibold text-sm tracking-wide hover:bg-secondary transition-colors">
+                
                 Solicitar apresentação
               </Link>
             </div>
@@ -57,8 +57,8 @@ const Index = () => {
                 A Altian é a parceira brasileira que traz equipamentos de mineração de próxima geração e tecnologia operacional ao setor de mineração nacional.
               </p>
             </div>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Com expertise em engenharia e compromisso com a confiabilidade operacional, aplicamos tecnologia global de ponta adaptada à realidade das operações de mineração brasileiras.
+            <p className="text-muted-foreground leading-relaxed mb-4">Com expertise em operações de mineração e compromisso com a confiabilidade operacional, aplicamos tecnologia global de ponta adaptada à realidade das operações de mineração brasileiras.
+
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Nosso foco é entregar soluções que combinam robustez mecânica com sistemas inteligentes de monitoramento e controle, garantindo desempenho superior em condições severas de operação.
@@ -84,18 +84,18 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { icon: Shield, title: "Segurança", desc: "Sistemas avançados de monitoramento e proteção que reduzem incidentes e protegem operadores em campo." },
-              { icon: Gauge, title: "Eficiência", desc: "Tecnologia que otimiza ciclos de transporte, consumo de combustível e tempo de operação." },
-              { icon: Wrench, title: "Robustez", desc: "Equipamentos projetados para suportar as condições mais severas de operação em minas a céu aberto." },
-            ].map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="bg-card border border-border p-8 group hover:border-primary/50 transition-colors">
+            { icon: Shield, title: "Segurança", desc: "Sistemas avançados de monitoramento e proteção que reduzem incidentes e protegem operadores em campo." },
+            { icon: Gauge, title: "Eficiência", desc: "Tecnologia que otimiza ciclos de transporte, consumo de combustível e tempo de operação." },
+            { icon: Wrench, title: "Robustez", desc: "Equipamentos projetados para suportar as condições mais severas de operação em minas a céu aberto." }].
+            map(({ icon: Icon, title, desc }) =>
+            <div key={title} className="bg-card border border-border p-8 group hover:border-primary/50 transition-colors">
                 <div className="w-12 h-12 flex items-center justify-center bg-primary/10 mb-6">
                   <Icon className="text-primary" size={24} />
                 </div>
                 <h3 className="font-heading text-lg font-semibold text-foreground mb-3">{title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -115,21 +115,21 @@ const Index = () => {
             </p>
             <ul className="space-y-4 mb-8">
               {[
-                "Capacidade de carga: 91 toneladas",
-                "Motor de alta potência para terrenos íngremes",
-                "Sistema de frenagem avançado para segurança",
-                "Baixo custo operacional por tonelada transportada",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3">
+              "Capacidade de carga: 91 toneladas",
+              "Motor de alta potência para terrenos íngremes",
+              "Sistema de frenagem avançado para segurança",
+              "Baixo custo operacional por tonelada transportada"].
+              map((item) =>
+              <li key={item} className="flex items-start gap-3">
                   <ChevronRight className="text-primary mt-0.5 shrink-0" size={18} />
                   <span className="text-sm text-muted-foreground">{item}</span>
                 </li>
-              ))}
+              )}
             </ul>
             <Link
               to="/equipamentos"
-              className="inline-flex items-center gap-2 text-primary font-heading font-semibold text-sm hover:underline"
-            >
+              className="inline-flex items-center gap-2 text-primary font-heading font-semibold text-sm hover:underline">
+              
               Ver especificações completas <ChevronRight size={16} />
             </Link>
           </div>
@@ -144,20 +144,20 @@ const Index = () => {
           </h2>
           <div className="grid md:grid-cols-5 gap-6">
             {[
-              { step: "01", title: "Avaliação da operação", icon: Gauge },
-              { step: "02", title: "Preparação de infraestrutura", icon: Settings },
-              { step: "03", title: "Treinamento das equipes", icon: HardHat },
-              { step: "04", title: "Entrega e comissionamento", icon: Truck },
-              { step: "05", title: "Suporte operacional", icon: Headphones },
-            ].map(({ step, title, icon: Icon }) => (
-              <div key={step} className="text-center">
+            { step: "01", title: "Avaliação da operação", icon: Gauge },
+            { step: "02", title: "Preparação de infraestrutura", icon: Settings },
+            { step: "03", title: "Treinamento das equipes", icon: HardHat },
+            { step: "04", title: "Entrega e comissionamento", icon: Truck },
+            { step: "05", title: "Suporte operacional", icon: Headphones }].
+            map(({ step, title, icon: Icon }) =>
+            <div key={step} className="text-center">
                 <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary/10 border border-primary/30">
                   <Icon className="text-primary" size={24} />
                 </div>
                 <span className="text-primary font-heading font-bold text-xs tracking-widest">{step}</span>
                 <h3 className="font-heading text-sm font-semibold text-foreground mt-2">{title}</h3>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -174,15 +174,15 @@ const Index = () => {
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                "Treinamento de operadores",
-                "Suporte técnico especializado",
-                "Manutenção preventiva e corretiva",
-                "Integração com operação da mina",
-              ].map((item) => (
-                <div key={item} className="bg-secondary border border-border p-4">
+              "Treinamento de operadores",
+              "Suporte técnico especializado",
+              "Manutenção preventiva e corretiva",
+              "Integração com operação da mina"].
+              map((item) =>
+              <div key={item} className="bg-secondary border border-border p-4">
                   <p className="text-sm text-foreground font-medium">{item}</p>
                 </div>
-              ))}
+              )}
             </div>
           </div>
           <div className="relative">
@@ -203,15 +203,15 @@ const Index = () => {
           </p>
           <Link
             to="/contato"
-            className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-3.5 font-heading font-semibold text-sm tracking-wide hover:opacity-90 transition-opacity"
-          >
+            className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-3.5 font-heading font-semibold text-sm tracking-wide hover:opacity-90 transition-opacity">
+            
             Falar com nossa equipe técnica
             <ChevronRight size={18} className="ml-2" />
           </Link>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>);
+
 };
 
 export default Index;
