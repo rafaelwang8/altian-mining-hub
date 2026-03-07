@@ -12,7 +12,7 @@ const Sobre = () => (
         <div className="absolute inset-0 bg-background/90" />
       </div>
       <div className="relative max-w-7xl mx-auto">
-        <h1 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">Sobre a ALTian</h1>
+        <h1 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">Sobre a Altian</h1>
         <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
           Representante brasileira de tecnologia e equipamentos de mineração de alta performance, com foco em segurança operacional e produtividade.
         </p>
@@ -30,7 +30,7 @@ const Sobre = () => (
             </p>
           </div>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            A ALTian atua como ponte entre a tecnologia global de ponta da Boonray e as necessidades específicas das operações de mineração no Brasil. Nosso compromisso é entregar soluções completas — do equipamento ao suporte técnico contínuo.
+            A Altian atua como ponte entre a tecnologia global de ponta da Boonray e as necessidades específicas das operações de mineração no Brasil. Nosso compromisso é entregar soluções completas — do equipamento ao suporte técnico contínuo.
           </p>
           <p className="text-muted-foreground leading-relaxed">
             Trabalhamos lado a lado com engenheiros de operação e diretores de minas para garantir que cada solução implementada gere resultados mensuráveis em segurança, produtividade e custo operacional.

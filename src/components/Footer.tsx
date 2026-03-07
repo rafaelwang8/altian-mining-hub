@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-3 gap-10">
         <div>
           <h3 className="font-heading text-xl font-bold text-foreground mb-3">
-            ALT<span className="text-primary">ian</span>
+            Alt<span className="text-primary">ian</span>
           </h3>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Representante brasileira de caminhões e tecnologias Boonray para mineração.
@@ -40,7 +40,7 @@ const Footer = () => (
 
       <div className="mt-12 pt-6 border-t border-border text-center">
         <p className="text-xs text-muted-foreground">
-          © {new Date().getFullYear()} ALTian. Todos os direitos reservados.
+          © {new Date().getFullYear()} Altian. Todos os direitos reservados.
         </p>
       </div>
     </div>

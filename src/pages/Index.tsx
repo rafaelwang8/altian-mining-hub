@@ -50,11 +50,11 @@ const Index = () => {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Sobre a ALTian
+              Sobre a Altian
             </h2>
             <div className="industrial-border pl-6 mb-6">
               <p className="text-muted-foreground leading-relaxed">
-                A ALTian é a parceira brasileira que traz equipamentos de mineração de próxima geração e tecnologia operacional ao setor de mineração nacional.
+                A Altian é a parceira brasileira que traz equipamentos de mineração de próxima geração e tecnologia operacional ao setor de mineração nacional.
               </p>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-4">
@@ -199,7 +199,7 @@ const Index = () => {
             Converse com nossa equipe de engenharia
           </h2>
           <p className="text-muted-foreground mb-8">
-            Entre em contato para avaliar como a tecnologia ALTian pode ser aplicada à sua operação de mineração.
+            Entre em contato para avaliar como a tecnologia Altian pode ser aplicada à sua operação de mineração.
           </p>
           <Link
             to="/contato"
