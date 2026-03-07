@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-3 gap-10">
         <div>
           <h3 className="font-heading text-xl font-bold text-foreground mb-3">
-            ALT<span className="text-primary">ian</span>
+            Alt<span className="text-primary">ian</span>
           </h3>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Representante brasileira de caminhões e tecnologias Boonray para mineração.
