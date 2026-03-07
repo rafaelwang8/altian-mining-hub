@@ -50,7 +50,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Sobre a ALTian
+              Sobre a Altian
             </h2>
             <div className="industrial-border pl-6 mb-6">
               <p className="text-muted-foreground leading-relaxed">
