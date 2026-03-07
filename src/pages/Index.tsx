@@ -54,7 +54,7 @@ const Index = () => {
             </h2>
             <div className="industrial-border pl-6 mb-6">
               <p className="text-muted-foreground leading-relaxed">
-                A ALTian é a parceira brasileira que traz equipamentos de mineração de próxima geração e tecnologia operacional ao setor de mineração nacional.
+                A Altian é a parceira brasileira que traz equipamentos de mineração de próxima geração e tecnologia operacional ao setor de mineração nacional.
               </p>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-4">
