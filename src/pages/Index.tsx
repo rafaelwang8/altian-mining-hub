@@ -146,7 +146,7 @@ const Index = () => {
             <div>
               <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-6">Escavadeira Controlada Remotamente</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Escavadeira de grande porte com controle remoto, eliminando a exposição de operadores a ambientes de risco e aumentando a segurança operacional.
+                Escavadeira com controle remoto, eliminando a exposição de operadores a ambientes de risco e aumentando a segurança operacional.
               </p>
               <ul className="space-y-4 mb-8">
                 {[
