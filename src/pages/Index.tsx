@@ -103,36 +103,72 @@ const Index = () => {
 
       {/* Equipamentos */}
       <section className="section-padding bg-background">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <div className="order-2 lg:order-1">
-            <img src={truckImg} alt="Caminhão off-road de mineração 91 toneladas" className="w-full aspect-square object-cover" />
-          </div>
-          <div className="order-1 lg:order-2">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">Caminhão Off-Road
+        <div className="max-w-7xl mx-auto">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-16 text-center">
+            Nossos Equipamentos
+          </h2>
 
-            </h2>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              O caminhão off-road é projetado para operações de mineração de grande escala, combinando alta capacidade de carga com eficiência operacional.
-            </p>
-            <ul className="space-y-4 mb-8">
-              {[
-              "Capacidade de carga: Até 100T",
-              "Motor de alta potência para terrenos íngremes e regeneração nas frenagens",
-              "Sistema de monitoramento avançado com LIDAR, radar e câmeras para segurança",
-              "Baixo custo operacional por tonelada transportada"].
-              map((item) =>
-              <li key={item} className="flex items-start gap-3">
-                  <ChevronRight className="text-primary mt-0.5 shrink-0" size={18} />
-                  <span className="text-sm text-muted-foreground">{item}</span>
-                </li>
-              )}
-            </ul>
-            <Link
-              to="/equipamentos"
-              className="inline-flex items-center gap-2 text-primary font-heading font-semibold text-sm hover:underline">
-              
-              Créditos de Carbono: Redução de emissão de CO2 <ChevronRight size={16} />
-            </Link>
+          {/* Caminhão Off-Road */}
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+            <div className="order-2 lg:order-1">
+              <img src={truckImg} alt="Caminhão off-road de mineração" className="w-full aspect-square object-cover" />
+            </div>
+            <div className="order-1 lg:order-2">
+              <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-6">Caminhão Off-Road</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                O caminhão off-road é projetado para operações de mineração de grande escala, combinando alta capacidade de carga com eficiência operacional.
+              </p>
+              <ul className="space-y-4 mb-8">
+                {[
+                  "Capacidade de carga: Até 100T",
+                  "Motor de alta potência para terrenos íngremes e regeneração nas frenagens",
+                  "Sistema de monitoramento avançado com LIDAR, radar e câmeras para segurança",
+                  "Troca de bateria instantânea para máximo uptime operacional",
+                  "Baixo custo operacional por tonelada transportada",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <ChevronRight className="text-primary mt-0.5 shrink-0" size={18} />
+                    <span className="text-sm text-muted-foreground">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                to="/equipamentos"
+                className="inline-flex items-center gap-2 text-primary font-heading font-semibold text-sm hover:underline">
+                Créditos de Carbono: Redução de emissão de CO2 <ChevronRight size={16} />
+              </Link>
+            </div>
+          </div>
+
+          {/* Escavadeira */}
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h3 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-6">Escavadeira Controlada Remotamente</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Escavadeira de grande porte com controle remoto, eliminando a exposição de operadores a ambientes de risco e aumentando a segurança operacional.
+              </p>
+              <ul className="space-y-4 mb-8">
+                {[
+                  "Operação 100% remota para máxima segurança",
+                  "Alta capacidade de escavação para mineração de larga escala",
+                  "Sistemas de câmeras e sensores para operação precisa à distância",
+                  "Integração com sistemas de despacho e gestão de frota",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <ChevronRight className="text-primary mt-0.5 shrink-0" size={18} />
+                    <span className="text-sm text-muted-foreground">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link
+                to="/equipamentos"
+                className="inline-flex items-center gap-2 text-primary font-heading font-semibold text-sm hover:underline">
+                Saiba mais <ChevronRight size={16} />
+              </Link>
+            </div>
+            <div>
+              <img src={excavatorImg} alt="Escavadeira de mineração controlada remotamente" className="w-full aspect-square object-cover" />
+            </div>
           </div>
         </div>
       </section>
