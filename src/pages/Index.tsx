@@ -133,11 +133,6 @@ const Index = () => {
                   </li>
                 ))}
               </ul>
-              <Link
-                to="/equipamentos"
-                className="inline-flex items-center gap-2 text-primary font-heading font-semibold text-sm hover:underline">
-                Créditos de Carbono: Redução de emissão de CO2 <ChevronRight size={16} />
-              </Link>
             </div>
           </div>
 
