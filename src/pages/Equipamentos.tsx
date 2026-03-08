@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { ChevronRight, Weight, Fuel, Gauge, ShieldCheck, Cog, Mountain } from "lucide-react";
 import truckImg from "@/assets/truck-detail.jpg";
+import excavatorImg from "@/assets/excavator.jpg";
 import heroImg from "@/assets/hero-truck.jpg";
 
 const Equipamentos = () => (

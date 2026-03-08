@@ -3,6 +3,7 @@ import { Shield, Gauge, Wrench, ChevronRight, HardHat, Headphones, Settings, Tru
 import Layout from "@/components/Layout";
 import heroImg from "@/assets/hero-truck.jpg";
 import truckImg from "@/assets/truck-detail.jpg";
+import excavatorImg from "@/assets/excavator.jpg";
 import miningImg from "@/assets/mining-operation.jpg";
 import supportImg from "@/assets/support-team.jpg";
 
