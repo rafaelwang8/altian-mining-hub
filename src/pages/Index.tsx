@@ -206,7 +206,7 @@ const Index = () => {
             to="/contato"
             className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-3.5 font-heading font-semibold text-sm tracking-wide hover:opacity-90 transition-opacity">
             
-            Falar com nossa equipe técnica
+            Falar com nossa equipe
             <ChevronRight size={18} className="ml-2" />
           </Link>
         </div>

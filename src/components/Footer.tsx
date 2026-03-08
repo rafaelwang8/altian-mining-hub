@@ -28,12 +28,10 @@ const Footer = () =>
           <h4 className="font-heading text-sm font-semibold text-foreground mb-4 uppercase tracking-wider">Contato</h4>
           <p className="text-sm text-muted-foreground mb-2">contato@altian.com.br</p>
           <a
-
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors" href="">
-          
-            <Linkedin size={16} /> LinkedIn
+            <Linkedin size={16} />
           </a>
         </div>
       </div>
