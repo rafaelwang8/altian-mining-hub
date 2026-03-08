@@ -87,7 +87,7 @@ const Index = () => {
             { icon: Shield, title: "Segurança", desc: "Sistemas avançados de monitoramento e proteção que reduzem incidentes e protegem operadores em campo." },
             { icon: Gauge, title: "Eficiência", desc: "Tecnologia que otimiza ciclos de transporte, consumo de combustível e tempo de operação. Despacho inteligente embarcado de fábrica." },
             { icon: Wrench, title: "Robustez", desc: "Equipamentos projetados para suportar as condições mais severas de operação em minas a céu aberto." },
-            { icon: Settings, title: "Disponibilidade", desc: "Alta disponibilidade e uptime dos equipamentos, garantindo operação contínua e redução de paradas não programadas." }].
+            { icon: Settings, title: "Disponibilidade", desc: "Recargas rápidas para uptime dos equipamentos, garantindo operação contínua e redução de paradas não programadas." }].
             map(({ icon: Icon, title, desc }) =>
             <div key={title} className="bg-card border border-border p-8 group hover:border-primary/50 transition-colors">
                 <div className="w-12 h-12 flex items-center justify-center bg-primary/10 mb-6">
