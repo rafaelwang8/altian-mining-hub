@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { ChevronRight, Weight, Fuel, Gauge, ShieldCheck, Cog, Mountain } from "lucide-react";
 import truckImg from "@/assets/truck-detail.jpg";
+import excavatorImg from "@/assets/excavator.jpg";
 import heroImg from "@/assets/hero-truck.jpg";
 
 const Equipamentos = () => (
@@ -63,8 +64,69 @@ const Equipamentos = () => (
       </div>
     </section>
 
-    {/* Advantages */}
+    {/* Battery Swap */}
+    <section className="section-padding bg-background border-t border-border">
+      <div className="max-w-7xl mx-auto text-center max-w-3xl">
+        <h2 className="font-heading text-3xl font-bold text-foreground mb-6">Troca de Bateria Instantânea</h2>
+        <p className="text-muted-foreground leading-relaxed mb-6">
+          O caminhão off-road conta com sistema de troca de bateria instantânea, permitindo que a operação continue sem interrupções prolongadas para recarga. A bateria é substituída em minutos, garantindo máximo uptime e produtividade contínua.
+        </p>
+        <div className="grid sm:grid-cols-3 gap-6">
+          {[
+            { title: "Troca em minutos", desc: "Bateria substituída rapidamente sem paradas longas" },
+            { title: "Uptime máximo", desc: "Operação contínua 24/7 com baterias em rotação" },
+            { title: "Zero emissões", desc: "Operação 100% elétrica com créditos de carbono" },
+          ].map(({ title, desc }) => (
+            <div key={title} className="bg-card border border-border p-6">
+              <h3 className="font-heading font-semibold text-foreground mb-2">{title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* Escavadeira */}
     <section className="section-padding bg-secondary">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span className="text-primary font-heading text-xs font-semibold tracking-widest uppercase">Controle Remoto</span>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">
+            Escavadeira Controlada Remotamente
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-8">
+            Escavadeira de grande porte operada remotamente, eliminando a necessidade de operadores em ambientes de risco. Equipada com câmeras, sensores e sistemas de comunicação para operação segura e precisa à distância.
+          </p>
+          <div className="grid grid-cols-2 gap-4 mb-8">
+            {[
+              { icon: ShieldCheck, label: "Segurança", value: "Operação remota" },
+              { icon: Gauge, label: "Precisão", value: "Sensores avançados" },
+              { icon: Cog, label: "Integração", value: "Gestão de frota" },
+              { icon: Mountain, label: "Terreno", value: "Mineração pesada" },
+            ].map(({ icon: Icon, label, value }) => (
+              <div key={label} className="bg-card border border-border p-4">
+                <Icon className="text-primary mb-2" size={20} />
+                <p className="text-xs text-muted-foreground uppercase tracking-wider">{label}</p>
+                <p className="text-sm font-heading font-semibold text-foreground">{value}</p>
+              </div>
+            ))}
+          </div>
+          <Link
+            to="/contato"
+            className="inline-flex items-center bg-primary text-primary-foreground px-8 py-3.5 font-heading font-semibold text-sm hover:opacity-90 transition-opacity"
+          >
+            Solicitar informações <ChevronRight size={18} className="ml-2" />
+          </Link>
+        </div>
+        <div>
+          <img src={excavatorImg} alt="Escavadeira de mineração controlada remotamente" className="w-full aspect-square object-cover" />
+          <div className="h-1 bg-primary" />
+        </div>
+      </div>
+    </section>
+
+    {/* Vantagens */}
+    <section className="section-padding bg-background">
       <div className="max-w-7xl mx-auto">
         <h2 className="font-heading text-3xl font-bold text-foreground mb-12 text-center">Vantagens Operacionais</h2>
         <div className="grid md:grid-cols-3 gap-8">
