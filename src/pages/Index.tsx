@@ -112,7 +112,7 @@ const Index = () => {
 
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-
+              O caminhão off-road é projetado para operações de mineração de grande escala, combinando alta capacidade de carga com eficiência operacional.
             </p>
             <ul className="space-y-4 mb-8">
               {[
