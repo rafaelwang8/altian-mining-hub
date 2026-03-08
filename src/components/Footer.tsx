@@ -7,7 +7,7 @@ const Footer = () =>
       <div className="grid md:grid-cols-3 gap-10">
         <div>
           <h3 className="font-heading text-xl font-bold text-foreground mb-3">
-            Alt<span className="text-primary">​</span>
+            Alt<span className="text-primary">​</span>ian do Brasil
           </h3>
           <p className="text-sm text-muted-foreground leading-relaxed">Empresa brasileira de tecnologias para mineração.
 
@@ -28,12 +28,10 @@ const Footer = () =>
           <h4 className="font-heading text-sm font-semibold text-foreground mb-4 uppercase tracking-wider">Contato</h4>
           <p className="text-sm text-muted-foreground mb-2">contato@altian.com.br</p>
           <a
-
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors" href="">
-          
-            <Linkedin size={16} /> LinkedIn
+            <Linkedin size={16} />
           </a>
         </div>
       </div>
