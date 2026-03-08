@@ -23,7 +23,7 @@ const Index = () => {
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
               Tecnologia que protege vidas e aumenta a produtividade na mineração
             </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl">Caminhões off-road de alta capacidade e tecnologia avançada para operações de mineração.
+            <p className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl">Equipamentos embarcados com tecnologia avançada para operações de mineração.
 
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -53,8 +53,8 @@ const Index = () => {
               Sobre a Altian
             </h2>
             <div className="industrial-border pl-6 mb-6">
-              <p className="text-muted-foreground leading-relaxed">
-                A Altian é a parceira brasileira que traz equipamentos de mineração de próxima geração e tecnologia operacional ao setor de mineração nacional.
+              <p className="text-muted-foreground leading-relaxed">A Altian é a empresa brasileira que traz equipamentos de mineração de próxima geração e tecnologia operacional ao setor de mineração nacional.
+
               </p>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-4">Com expertise em operações de mineração e compromisso com a confiabilidade operacional, aplicamos tecnologia global de ponta adaptada à realidade das operações de mineração brasileiras.
@@ -108,11 +108,11 @@ const Index = () => {
             <img src={truckImg} alt="Caminhão off-road de mineração 91 toneladas" className="w-full aspect-square object-cover" />
           </div>
           <div className="order-1 lg:order-2">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Caminhão Off-Road 91t
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">Caminhão Off-Road
+
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              O caminhão off-road de 91 toneladas Boonray é projetado para operações de mineração de grande escala, combinando alta capacidade de carga com eficiência operacional.
+
             </p>
             <ul className="space-y-4 mb-8">
               {[
@@ -196,8 +196,8 @@ const Index = () => {
       {/* CTA Contact */}
       <section className="section-padding bg-card border-t border-border">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Converse com nossa equipe de engenharia
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">Converse com nossa equipe
+
           </h2>
           <p className="text-muted-foreground mb-8">
             Entre em contato para avaliar como a tecnologia Altian pode ser aplicada à sua operação de mineração.

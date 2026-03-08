@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 import { Linkedin } from "lucide-react";
 
-const Footer = () => (
-  <footer className="bg-secondary border-t border-border">
+const Footer = () =>
+<footer className="bg-secondary border-t border-border">
     <div className="max-w-7xl mx-auto section-padding py-12">
       <div className="grid md:grid-cols-3 gap-10">
         <div>
           <h3 className="font-heading text-xl font-bold text-foreground mb-3">
-            Alt<span className="text-primary">ian</span>
+            Alt<span className="text-primary">​</span>
           </h3>
-          <p className="text-sm text-muted-foreground leading-relaxed">
-            Representante brasileira de caminhões e tecnologias Boonray para mineração.
-          </p>
+          <p className="text-sm text-muted-foreground leading-relaxed">Empresa brasileira de tecnologias para mineração.
+
+        </p>
         </div>
 
         <div>
@@ -28,11 +28,11 @@ const Footer = () => (
           <h4 className="font-heading text-sm font-semibold text-foreground mb-4 uppercase tracking-wider">Contato</h4>
           <p className="text-sm text-muted-foreground mb-2">contato@altian.com.br</p>
           <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-          >
+
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors" href="">
+          
             <Linkedin size={16} /> LinkedIn
           </a>
         </div>
@@ -44,7 +44,7 @@ const Footer = () => (
         </p>
       </div>
     </div>
-  </footer>
-);
+  </footer>;
+
 
 export default Footer;
