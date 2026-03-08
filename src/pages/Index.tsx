@@ -161,11 +161,6 @@ const Index = () => {
                   </li>
                 ))}
               </ul>
-              <Link
-                to="/equipamentos"
-                className="inline-flex items-center gap-2 text-primary font-heading font-semibold text-sm hover:underline">
-                Saiba mais <ChevronRight size={16} />
-              </Link>
             </div>
             <div>
               <img src={excavatorImg} alt="Escavadeira de mineração controlada remotamente" className="w-full aspect-square object-cover" />
