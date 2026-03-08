@@ -116,9 +116,9 @@ const Index = () => {
             </p>
             <ul className="space-y-4 mb-8">
               {[
-              "Capacidade de carga: 91 toneladas",
-              "Motor de alta potência para terrenos íngremes",
-              "Sistema de frenagem avançado para segurança",
+              "Capacidade de carga: Até 100T",
+              "Motor de alta potência para terrenos íngremes e regeneração nas frenagens",
+              "Sistema de monitoramento avançado com LIDAR, radar e câmeras para segurança",
               "Baixo custo operacional por tonelada transportada"].
               map((item) =>
               <li key={item} className="flex items-start gap-3">
