@@ -19,7 +19,7 @@ const Index = () => {
         <div className="relative z-10 max-w-7xl mx-auto section-padding">
           <div className="max-w-2xl">
             <div className="inline-block bg-primary/10 border border-primary/30 px-3 py-1 mb-6">
-              <span className="text-primary text-xs font-semibold tracking-widest uppercase">CAMIHÕES AUTÔNOMOS ELÉTRICOS NO BRASIL</span>
+              <span className="text-primary text-xs font-semibold tracking-widest uppercase">CAMINHÕES AUTÔNOMOS ELÉTRICOS NO BRASIL</span>
             </div>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
               Tecnologia que protege vidas e aumenta a produtividade na mineração
