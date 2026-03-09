@@ -497,7 +497,7 @@ const Index = () => {
           </p>
           <Link
             to="/contato"
-            className="inline-flex items-center justify-center bg-primary text-primary-foreground px-12 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors glow-red"
+            className="inline-flex items-center justify-center bg-primary text-primary-foreground px-12 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors glow-yellow"
           >
             Entrar em contato com a Altian
             <ArrowRight size={16} className="ml-3" />
