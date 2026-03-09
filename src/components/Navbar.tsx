@@ -4,11 +4,11 @@ import { Menu, X } from "lucide-react";
 import logoImg from "@/assets/altian-logo.jpg";
 
 const navLinks = [
-  { href: "/", label: "Início" },
-  { href: "/sobre", label: "Sobre" },
-  { href: "/equipamentos", label: "Equipamentos" },
-  { href: "/contato", label: "Contato" },
-];
+{ href: "/", label: "Início" },
+{ href: "/sobre", label: "Sobre" },
+{ href: "/equipamentos", label: "Equipamentos" },
+{ href: "/contato", label: "Contato" }];
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -20,27 +20,27 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-3">
           <img src={logoImg} alt="Altian" className="h-10 w-10 object-contain" />
           <span className="font-heading text-xl font-bold tracking-tight text-foreground">
-            ALT<span className="text-primary">IAN</span>
+            ALT
           </span>
         </Link>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              to={link.href}
-              className={`text-xs font-medium tracking-widest uppercase transition-colors hover:text-primary ${
-                location.pathname === link.href ? "text-primary" : "text-muted-foreground"
-              }`}
-            >
+          {navLinks.map((link) =>
+          <Link
+            key={link.href}
+            to={link.href}
+            className={`text-xs font-medium tracking-widest uppercase transition-colors hover:text-primary ${
+            location.pathname === link.href ? "text-primary" : "text-muted-foreground"}`
+            }>
+            
               {link.label}
             </Link>
-          ))}
+          )}
           <Link
             to="/contato"
-            className="bg-primary text-primary-foreground px-6 py-2.5 text-xs font-bold tracking-widest uppercase hover:bg-primary/90 transition-colors"
-          >
+            className="bg-primary text-primary-foreground px-6 py-2.5 text-xs font-bold tracking-widest uppercase hover:bg-primary/90 transition-colors">
+            
             Fale Conosco
           </Link>
         </div>
@@ -52,29 +52,29 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu */}
-      {open && (
-        <div className="md:hidden bg-background border-t border-border px-6 pb-6">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              to={link.href}
-              onClick={() => setOpen(false)}
-              className="block py-3 text-xs font-medium tracking-widest uppercase text-muted-foreground hover:text-primary transition-colors"
-            >
+      {open &&
+      <div className="md:hidden bg-background border-t border-border px-6 pb-6">
+          {navLinks.map((link) =>
+        <Link
+          key={link.href}
+          to={link.href}
+          onClick={() => setOpen(false)}
+          className="block py-3 text-xs font-medium tracking-widest uppercase text-muted-foreground hover:text-primary transition-colors">
+          
               {link.label}
             </Link>
-          ))}
+        )}
           <Link
-            to="/contato"
-            onClick={() => setOpen(false)}
-            className="inline-block mt-2 bg-primary text-primary-foreground px-6 py-2.5 text-xs font-bold tracking-widest uppercase"
-          >
+          to="/contato"
+          onClick={() => setOpen(false)}
+          className="inline-block mt-2 bg-primary text-primary-foreground px-6 py-2.5 text-xs font-bold tracking-widest uppercase">
+          
             Fale Conosco
           </Link>
         </div>
-      )}
-    </nav>
-  );
+      }
+    </nav>);
+
 };
 
 export default Navbar;
