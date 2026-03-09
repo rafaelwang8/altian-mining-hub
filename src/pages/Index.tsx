@@ -314,7 +314,7 @@ const Index = () => {
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
               Tecnologia de Mineração Comprovada
             </h2>
-            <p className="leading-relaxed bg-muted text-primary">
+            <p className="text-muted-foreground leading-relaxed">
               A tecnologia Altian já está implantada em operações de mineração de grande escala ao redor do mundo.
             </p>
           </div>
