@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Linkedin } from "lucide-react";
-import logoImg from "@/assets/altian-logo.png";
+import logoImg from "@/assets/altian-logo.jpg";
 
 const Footer = () => (
   <footer className="bg-card border-t border-border">
