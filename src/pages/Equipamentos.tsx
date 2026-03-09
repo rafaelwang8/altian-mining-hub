@@ -6,8 +6,8 @@ import excavatorImg from "@/assets/excavator.jpg";
 import techImg from "@/assets/autonomous-tech.jpg";
 import heroImg from "@/assets/hero-mine.jpg";
 
-const Equipamentos = () => (
-  <Layout>
+const Equipamentos = () =>
+<Layout>
     {/* Hero */}
     <section className="relative py-44 section-padding overflow-hidden">
       <div className="absolute inset-0">
@@ -20,7 +20,7 @@ const Equipamentos = () => (
       <div className="relative max-w-7xl mx-auto">
         <div className="flex items-center gap-3 mb-6">
           <div className="h-px w-8 bg-primary" />
-          <span className="text-primary text-xs font-bold tracking-widest uppercase">Equipamentos</span>
+          <span className="text-primary text-xs font-bold tracking-widest uppercase">Tecnologia de ponta aplicada à mineração brasileira      </span>
         </div>
         <h1 className="font-heading text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight max-w-3xl">
           Caminhões Autônomos Elétricos para Mineração
@@ -38,10 +38,10 @@ const Equipamentos = () => (
           {/* Image */}
           <div className="relative overflow-hidden">
             <img
-              src={truckImg}
-              alt="Caminhão autônomo elétrico de mineração"
-              className="w-full h-full object-cover min-h-[560px]"
-            />
+            src={truckImg}
+            alt="Caminhão autônomo elétrico de mineração"
+            className="w-full h-full object-cover min-h-[560px]" />
+          
             <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/10" />
             <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
           </div>
@@ -61,25 +61,25 @@ const Equipamentos = () => (
 
             <div className="space-y-0 border border-border divide-y divide-border mb-10">
               {[
-                { label: "Capacidade de Carga", value: "Até 100 toneladas" },
-                { label: "Capacidade da Bateria", value: "Até 800 kWh" },
-                { label: "Sistema de Bateria", value: "Troca instantânea" },
-                { label: "Autonomia de Condução", value: "Nível L4" },
-                { label: "Sistema de Percepção", value: "LIDAR, Radar e Câmeras" },
-                { label: "Propulsão", value: "100% Elétrica" },
-                { label: "Aplicação", value: "Minas a Céu Aberto" },
-              ].map(({ label, value }) => (
-                <div key={label} className="flex items-center justify-between px-5 py-3.5">
+            { label: "Capacidade de Carga", value: "Até 100 toneladas" },
+            { label: "Capacidade da Bateria", value: "Até 800 kWh" },
+            { label: "Sistema de Bateria", value: "Troca instantânea" },
+            { label: "Autonomia de Condução", value: "Nível L4" },
+            { label: "Sistema de Percepção", value: "LIDAR, Radar e Câmeras" },
+            { label: "Propulsão", value: "100% Elétrica" },
+            { label: "Aplicação", value: "Minas a Céu Aberto" }].
+            map(({ label, value }) =>
+            <div key={label} className="flex items-center justify-between px-5 py-3.5">
                   <span className="text-xs text-muted-foreground uppercase tracking-wider">{label}</span>
                   <span className="text-sm font-heading font-bold text-foreground">{value}</span>
                 </div>
-              ))}
+            )}
             </div>
 
             <Link
-              to="/contato"
-              className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors w-full"
-            >
+            to="/contato"
+            className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors w-full">
+            
               Solicitar ficha técnica completa
               <ArrowRight size={16} className="ml-3" />
             </Link>
@@ -89,18 +89,18 @@ const Equipamentos = () => (
         {/* Battery Swap */}
         <div className="grid sm:grid-cols-3 gap-px bg-border border border-border border-t-0">
           {[
-            { icon: BatteryCharging, title: "Troca em Minutos", desc: "Sistema de troca de bateria instantânea sem paradas prolongadas para recarga." },
-            { icon: Gauge, title: "Uptime Máximo", desc: "Operação contínua 24/7 com baterias em rotação, maximizando a produtividade." },
-            { icon: Zap, title: "100% Elétrico", desc: "Zero emissões de CO₂ na operação, com custo energético significativamente menor que diesel." },
-          ].map(({ icon: Icon, title, desc }) => (
-            <div key={title} className="bg-secondary p-8">
+        { icon: BatteryCharging, title: "Troca em Minutos", desc: "Sistema de troca de bateria instantânea sem paradas prolongadas para recarga." },
+        { icon: Gauge, title: "Uptime Máximo", desc: "Operação contínua 24/7 com baterias em rotação, maximizando a produtividade." },
+        { icon: Zap, title: "100% Elétrico", desc: "Zero emissões de CO₂ na operação, com custo energético significativamente menor que diesel." }].
+        map(({ icon: Icon, title, desc }) =>
+        <div key={title} className="bg-secondary p-8">
               <div className="w-10 h-10 flex items-center justify-center bg-primary/10 border border-primary/20 mb-4">
                 <Icon className="text-primary" size={18} />
               </div>
               <h3 className="font-heading text-sm font-bold text-foreground mb-2">{title}</h3>
               <p className="text-xs text-muted-foreground leading-relaxed">{desc}</p>
             </div>
-          ))}
+        )}
         </div>
       </div>
     </section>
@@ -122,19 +122,19 @@ const Equipamentos = () => (
 
           <div className="grid sm:grid-cols-2 gap-4">
             {[
-              { icon: Eye, label: "Percepção LIDAR", value: "360° / 200m range" },
-              { icon: Radio, label: "Radar", value: "Clima adverso" },
-              { icon: Cpu, label: "Processamento IA", value: "Decisão em ms" },
-              { icon: ShieldCheck, label: "Segurança", value: "Fail-safe integrado" },
-              { icon: Mountain, label: "Terreno", value: "Off-road severo" },
-              { icon: Wrench, label: "Diagnóstico", value: "Manutenção preditiva" },
-            ].map(({ icon: Icon, label, value }) => (
-              <div key={label} className="bg-card border border-border p-4 hover:border-primary/40 transition-colors">
+          { icon: Eye, label: "Percepção LIDAR", value: "360° / 200m range" },
+          { icon: Radio, label: "Radar", value: "Clima adverso" },
+          { icon: Cpu, label: "Processamento IA", value: "Decisão em ms" },
+          { icon: ShieldCheck, label: "Segurança", value: "Fail-safe integrado" },
+          { icon: Mountain, label: "Terreno", value: "Off-road severo" },
+          { icon: Wrench, label: "Diagnóstico", value: "Manutenção preditiva" }].
+          map(({ icon: Icon, label, value }) =>
+          <div key={label} className="bg-card border border-border p-4 hover:border-primary/40 transition-colors">
                 <Icon className="text-primary mb-2" size={18} />
                 <p className="text-xs text-muted-foreground uppercase tracking-wider">{label}</p>
                 <p className="text-sm font-heading font-bold text-foreground">{value}</p>
               </div>
-            ))}
+          )}
           </div>
         </div>
 
@@ -168,22 +168,22 @@ const Equipamentos = () => (
 
           <div className="space-y-0 border border-border divide-y divide-border mb-10">
             {[
-              { label: "Modo de Operação", value: "100% Remoto" },
-              { label: "Capacidade de Escavação", value: "Larga escala" },
-              { label: "Sistema Visual", value: "Câmeras HD + sensores" },
-              { label: "Integração", value: "Gestão de frota" },
-            ].map(({ label, value }) => (
-              <div key={label} className="flex items-center justify-between px-5 py-3.5">
+          { label: "Modo de Operação", value: "100% Remoto" },
+          { label: "Capacidade de Escavação", value: "Larga escala" },
+          { label: "Sistema Visual", value: "Câmeras HD + sensores" },
+          { label: "Integração", value: "Gestão de frota" }].
+          map(({ label, value }) =>
+          <div key={label} className="flex items-center justify-between px-5 py-3.5">
                 <span className="text-xs text-muted-foreground uppercase tracking-wider">{label}</span>
                 <span className="text-sm font-heading font-bold text-foreground">{value}</span>
               </div>
-            ))}
+          )}
           </div>
 
           <Link
-            to="/contato"
-            className="inline-flex items-center bg-primary text-primary-foreground px-8 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors"
-          >
+          to="/contato"
+          className="inline-flex items-center bg-primary text-primary-foreground px-8 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors">
+          
             Solicitar informações
             <ArrowRight size={16} className="ml-3" />
           </Link>
@@ -204,20 +204,20 @@ const Equipamentos = () => (
         </div>
         <div className="grid md:grid-cols-3 gap-px bg-border">
           {[
-            { title: "Durabilidade Extrema", desc: "Estrutura reforçada para operação contínua em condições severas de temperatura, poeira e impacto." },
-            { title: "Custo por Tonelada", desc: "Eficiência elétrica e manutenção preditiva resultam em menor custo operacional por tonelada transportada." },
-            { title: "Integração Tecnológica", desc: "Sistemas de telemetria e monitoramento remoto integrados para gestão de frota em tempo real." },
-          ].map(({ title, desc }) => (
-            <div key={title} className="bg-card p-10">
+        { title: "Durabilidade Extrema", desc: "Estrutura reforçada para operação contínua em condições severas de temperatura, poeira e impacto." },
+        { title: "Custo por Tonelada", desc: "Eficiência elétrica e manutenção preditiva resultam em menor custo operacional por tonelada transportada." },
+        { title: "Integração Tecnológica", desc: "Sistemas de telemetria e monitoramento remoto integrados para gestão de frota em tempo real." }].
+        map(({ title, desc }) =>
+        <div key={title} className="bg-card p-10">
               <div className="h-0.5 w-10 bg-primary mb-6" />
               <h3 className="font-heading text-lg font-bold text-foreground mb-3">{title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
             </div>
-          ))}
+        )}
         </div>
       </div>
     </section>
-  </Layout>
-);
+  </Layout>;
+
 
 export default Equipamentos;
