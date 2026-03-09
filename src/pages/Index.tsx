@@ -271,7 +271,7 @@ const Index = () => {
 
               <div className="space-y-0 border border-border divide-y divide-border mb-10">
                 {[
-                { label: "Capacidade de Carga", value: "Até 100 toneladas" },
+                { label: "Capacidade de Carga", value: "100+ toneladas" },
                 { label: "Bateria", value: "Até 800 kWh" },
                 { label: "Sistema de Bateria", value: "Troca instantânea" },
                 { label: "Autonomia", value: "Direção L4 autônoma" },
