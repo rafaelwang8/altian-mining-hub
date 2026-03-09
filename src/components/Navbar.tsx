@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
         <Link to="/" className="flex items-center gap-3">
           <img src={logoImg} alt="Altian" className="h-10 w-10 object-contain rounded" />
-          <span className="text-lg font-bold tracking-wider uppercase text-foreground">Altian</span>
+          
         </Link>
 
         {/* Desktop */}
