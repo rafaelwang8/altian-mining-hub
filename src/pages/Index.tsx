@@ -35,7 +35,7 @@ const Index = () => {
 
         <div className="relative z-10 max-w-7xl mx-auto section-padding w-full">
           <div className="max-w-3xl">
-            <img src={altianLogo} alt="Logo Altian" className="h-16 mb-4 object-contain" />
+            <img src={altianLogo} alt="Logo Altian" className="h-20 md:h-24 mb-4 object-contain" />
             <div className="flex items-center gap-3 mb-8">
               <div className="h-px w-12 bg-primary" />
               <span className="text-primary text-xs font-bold tracking-widest uppercase">
