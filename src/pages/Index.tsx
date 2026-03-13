@@ -159,7 +159,7 @@ const Index = () => {
               <div className="h-px w-8 bg-primary" />
             </div>
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Tecnologia de Mineração Autônoma
+              Autônomo L4 - Tecnologia de Mineração Autônoma
             </h2>
             <p className="text-muted-foreground leading-relaxed">
               Sistemas avançados que eliminam o risco humano e maximizam a eficiência operacional da mina.
