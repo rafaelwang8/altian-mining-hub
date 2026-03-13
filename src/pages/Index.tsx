@@ -414,8 +414,8 @@ const Index = () => {
                   </div>
                   <div className="text-center">
                     <span className="text-primary font-heading font-bold text-xs tracking-widest">{step}</span>
-                    <h3 className="font-heading text-sm font-bold text-foreground mt-1 mb-2">{title}</h3>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{desc}</p>
+                    <h3 className="font-heading text-base md:text-lg font-bold text-foreground mt-1 mb-2">{title}</h3>
+                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{desc}</p>
                   </div>
                 </div>
               )}
