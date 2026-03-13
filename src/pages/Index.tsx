@@ -10,6 +10,7 @@ import techImg from "@/assets/autonomous-tech.jpg";
 import excavatorImg from "@/assets/excavator.jpg";
 import supportImg from "@/assets/support-team.jpg";
 import miningImg from "@/assets/mining-operation.jpg";
+import miningProvenImg from "@/assets/mining-proven.jpg";
 
 const Index = () => {
   return (
