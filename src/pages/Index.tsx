@@ -334,7 +334,7 @@ const Index = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-            { title: "Validação em Campo", desc: "Tecnologia testada e validada nas condições mais severas de operação em minas a céu aberto." },
+            { title: "Validado em Campo", desc: "Tecnologia testada e validada nas condições mais severas de operação em minas a céu aberto." },
             { title: "Padrão Internacional", desc: "Equipamentos com certificação para operação em grandes mineradoras globais." },
             { title: "Suporte Contínuo", desc: "Time de engenharia dedicado para suporte técnico 24/7 em operação." },
             { title: "Integração Comprovada", desc: "Integração com sistemas de gestão de mina e despacho operacional já utilizados." }].

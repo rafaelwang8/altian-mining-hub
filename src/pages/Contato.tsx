@@ -13,14 +13,55 @@ const Contato = () => {
     localizacao: "",
     mensagem: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Mensagem enviada",
-      description: "Nossa equipe de engenharia entrará em contato em breve.",
-    });
-    setForm({ empresa: "", nome: "", email: "", telefone: "", localizacao: "", mensagem: "" });
+    
+    const formspreeId = import.meta.env.VITE_FORMSPREE_ID;
+    if (!formspreeId || formspreeId === "YOUR_FORM_ID_HERE") {
+      toast({
+        title: "Configuração necessária",
+        description: "Por favor, configure o VITE_FORMSPREE_ID no arquivo .env",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
+      const formData = new FormData();
+      formData.append("empresa", form.empresa);
+      formData.append("nome", form.nome);
+      formData.append("email", form.email);
+      formData.append("telefone", form.telefone);
+      formData.append("localizacao", form.localizacao);
+      formData.append("message", form.mensagem);
+
+      const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Mensagem enviada com sucesso!",
+          description: "Nossa equipe de engenharia entrará em contato em breve.",
+        });
+        setForm({ empresa: "", nome: "", email: "", telefone: "", localizacao: "", mensagem: "" });
+      } else {
+        throw new Error("Erro ao enviar mensagem");
+      }
+    } catch (error) {
+      toast({
+        title: "Erro ao enviar",
+        description: "Não foi possível enviar a mensagem. Tente novamente.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const inputClass =
@@ -144,9 +185,10 @@ const Contato = () => {
 
             <button
               type="submit"
-              className="inline-flex items-center justify-center bg-primary text-primary-foreground px-10 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors w-full"
+              disabled={isLoading}
+              className="inline-flex items-center justify-center bg-primary text-primary-foreground px-10 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors w-full disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Entrar em Contato com a Altian
+              {isLoading ? "Enviando..." : "Entrar em Contato com a Altian"}
               <ArrowRight size={16} className="ml-3" />
             </button>
           </form>
@@ -158,21 +200,30 @@ const Contato = () => {
                 Informações de Contato
               </h3>
               <div className="space-y-5">
-                {[
-                  { icon: Mail, label: "Email", value: "contato@altian.com.br" },
-                  { icon: Phone, label: "Telefone", value: "+55 (11) 0000-0000" },
-                  { icon: MapPin, label: "Endereço", value: "São Paulo, SP — Brasil" },
-                ].map(({ icon: Icon, label, value }) => (
-                  <div key={label} className="flex items-start gap-4">
-                    <div className="w-10 h-10 flex items-center justify-center bg-primary/10 border border-primary/20 shrink-0">
-                      <Icon className="text-primary" size={16} />
-                    </div>
-                    <div>
-                      <div className="text-xs text-muted-foreground uppercase tracking-wider mb-0.5">{label}</div>
-                      <div className="text-sm text-foreground font-medium">{value}</div>
-                    </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 flex items-center justify-center bg-primary/10 border border-primary/20 shrink-0">
+                    <Mail className="text-primary" size={16} />
                   </div>
-                ))}
+                  <div>
+                    <div className="text-xs text-muted-foreground uppercase tracking-wider mb-0.5">Email</div>
+                    <div className="text-sm text-foreground font-medium">contato@altian.com.br</div>
+                  </div>
+                </div>
+
+                <a
+                  href="https://wa.me/5531996141102?text=Olá, gostaria de conversar sobre automação de mina"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-4 hover:opacity-80 transition-opacity"
+                >
+                  <div className="w-10 h-10 flex items-center justify-center bg-primary/10 border border-primary/20 shrink-0">
+                    <Phone className="text-primary" size={16} />
+                  </div>
+                  <div>
+                    <div className="text-xs text-muted-foreground uppercase tracking-wider mb-0.5">Telefone</div>
+                    <div className="text-sm text-foreground font-medium">+55 (31) 99614-1102</div>
+                  </div>
+                </a>
               </div>
             </div>
 
