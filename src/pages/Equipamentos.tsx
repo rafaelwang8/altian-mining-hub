@@ -1,10 +1,10 @@
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { ArrowRight, BatteryCharging, Gauge, Zap, Eye, Radio, Cpu, ShieldCheck, Mountain, Wrench } from "lucide-react";
-import truckImg from "@/assets/autonomous-truck.jpg";
-import excavatorImg from "@/assets/excavator.jpg";
-import techImg from "@/assets/autonomous-tech.jpg";
-import heroImg from "@/assets/hero-mine.jpg";
+import truckImg from "@/assets/truck-rear.jpg";
+import excavatorImg from "@/assets/excavator-new.jpg";
+import techImg from "@/assets/autonomous-tech-new.jpg";
+import heroImg from "@/assets/hero-mine-new.jpg";
 
 const Equipamentos = () => (
   <Layout>
