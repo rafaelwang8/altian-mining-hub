@@ -10,6 +10,7 @@ import techImg from "@/assets/autonomous-tech.jpg";
 import excavatorImg from "@/assets/excavator.jpg";
 import supportImg from "@/assets/support-team.jpg";
 import miningImg from "@/assets/mining-operation.jpg";
+import miningProvenImg from "@/assets/mining-proven.jpg";
 
 const Index = () => {
   return (
@@ -301,7 +302,7 @@ const Index = () => {
       {/* ── PROVEN TECHNOLOGY ─────────────────────────────────────── */}
       <section className="relative section-padding overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="" className="w-full h-full object-cover" aria-hidden="true" />
+          <img src={miningProvenImg} alt="" className="w-full h-full object-cover" aria-hidden="true" />
           <div className="absolute inset-0 bg-background/92" />
         </div>
         <div className="relative max-w-7xl mx-auto">
