@@ -5,7 +5,7 @@ import {
 "lucide-react";
 import Layout from "@/components/Layout";
 import heroImg from "@/assets/hero-mine.jpg";
-import truckImg from "@/assets/autonomous-truck.jpg";
+import truckImg from "@/assets/truck-rear.jpg";
 import techImg from "@/assets/autonomous-tech.jpg";
 import excavatorImg from "@/assets/excavator.jpg";
 import supportImg from "@/assets/support-team.jpg";
