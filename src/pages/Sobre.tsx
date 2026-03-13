@@ -1,9 +1,9 @@
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
 import { ArrowRight, Target, Shield, Zap, Globe, Check } from "lucide-react";
-import miningImg from "@/assets/mining-operation.jpg";
-import heroImg from "@/assets/hero-mine.jpg";
-import techImg from "@/assets/autonomous-tech.jpg";
+import miningImg from "@/assets/mining-operation-new.jpg";
+import heroImg from "@/assets/hero-mine-new.jpg";
+import techImg from "@/assets/autonomous-tech-new.jpg";
 
 const Sobre = () => (
   <Layout>

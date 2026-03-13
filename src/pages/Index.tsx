@@ -4,12 +4,12 @@ import {
   Truck, Zap, Eye, Brain, Radio, BatteryCharging, ArrowRight, Check } from
 "lucide-react";
 import Layout from "@/components/Layout";
-import heroImg from "@/assets/hero-mine.jpg";
+import heroImg from "@/assets/hero-mine-new.jpg";
 import truckImg from "@/assets/truck-rear.jpg";
-import techImg from "@/assets/autonomous-tech.jpg";
-import excavatorImg from "@/assets/excavator.jpg";
-import supportImg from "@/assets/support-team.jpg";
-import miningImg from "@/assets/mining-operation.jpg";
+import techImg from "@/assets/autonomous-tech-new.jpg";
+import excavatorImg from "@/assets/excavator-new.jpg";
+import supportImg from "@/assets/support-team-new.jpg";
+import miningImg from "@/assets/mining-operation-new.jpg";
 import miningProvenImg from "@/assets/mining-proven.jpg";
 
 const Index = () => {
