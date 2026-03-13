@@ -17,51 +17,53 @@ const Contato = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    const formspreeId = import.meta.env.VITE_FORMSPREE_ID;
-    if (!formspreeId || formspreeId === "YOUR_FORM_ID_HERE") {
-      toast({
-        title: "Configuração necessária",
-        description: "Por favor, configure o VITE_FORMSPREE_ID no arquivo .env",
-        variant: "destructive",
-      });
-      return;
-    }
 
     setIsLoading(true);
 
-    try {
-      const formData = new FormData();
-      formData.append("empresa", form.empresa);
-      formData.append("nome", form.nome);
-      formData.append("email", form.email);
-      formData.append("telefone", form.telefone);
-      formData.append("localizacao", form.localizacao);
-      formData.append("message", form.mensagem);
+    // Prefer Formspree se estiver configurado;
+    // caso contrário, fallback para mailto direto ao responsável.
+    const formspreeId = import.meta.env.VITE_FORMSPREE_ID;
 
-      const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
-        method: "POST",
-        body: formData,
-      });
+    if (formspreeId && formspreeId !== "YOUR_FORM_ID_HERE") {
+      try {
+        const formData = new FormData();
+        formData.append("empresa", form.empresa);
+        formData.append("nome", form.nome);
+        formData.append("email", form.email);
+        formData.append("telefone", form.telefone);
+        formData.append("localizacao", form.localizacao);
+        formData.append("message", form.mensagem);
 
-      if (response.ok) {
-        toast({
-          title: "Mensagem enviada com sucesso!",
-          description: "Nossa equipe de engenharia entrará em contato em breve.",
+        const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
+          method: "POST",
+          body: formData,
         });
-        setForm({ empresa: "", nome: "", email: "", telefone: "", localizacao: "", mensagem: "" });
-      } else {
-        throw new Error("Erro ao enviar mensagem");
+
+        if (!response.ok) {
+          throw new Error("Erro ao enviar mensagem via Formspree");
+        }
+      } catch (error) {
+        setIsLoading(false);
+        toast({
+          title: "Erro ao enviar",
+          description: "Não foi possível enviar pelo Formspree. Tente novamente mais tarde.",
+          variant: "destructive",
+        });
+        return;
       }
-    } catch (error) {
-      toast({
-        title: "Erro ao enviar",
-        description: "Não foi possível enviar a mensagem. Tente novamente.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsLoading(false);
+    } else {
+      const subject = `Contato Altian: ${form.nome} - ${form.empresa}`;
+      const body = `Empresa: ${form.empresa}%0ANome: ${form.nome}%0AEmail: ${form.email}%0ATelefone: ${form.telefone}%0ALocalização: ${form.localizacao}%0A%0AMensagem:%0A${form.mensagem}`;
+      window.location.href = `mailto:rafael.wang@altian.com.br?subject=${encodeURIComponent(subject)}&body=${body}`;
     }
+
+    toast({
+      title: "Mensagem preparada",
+      description: "O formulário será encaminhado para rafael.wang@altian.com.br.",
+    });
+
+    setForm({ empresa: "", nome: "", email: "", telefone: "", localizacao: "", mensagem: "" });
+    setIsLoading(false);
   };
 
   const inputClass =
