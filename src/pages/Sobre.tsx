@@ -14,6 +14,7 @@ import heroImg from "@/assets/hero-mine-new.jpg";
 import miningImg from "@/assets/mining-operation-new.jpg";
 import truckImg from "@/assets/truck-rear.jpg";
 import lidarImg from "@/assets/LIDAR RADAR CAM.png";
+import miningTechImg from "@/assets/mining-operation-new.jpg";
 
 const Sobre = () => {
   return (
@@ -147,7 +148,7 @@ const Sobre = () => {
             </p>
           </div>
           <div className="rounded-xl overflow-hidden border border-slate-700">
-            <img src={lidarImg} alt="LIDAR e radar em caminhão de mineração" className="w-full h-full object-cover" />
+            <img src={miningTechImg} alt="Operação de mineração com caminhões de alta capacidade" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
