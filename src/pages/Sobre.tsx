@@ -24,18 +24,18 @@ const Sobre = () => {
           <img
             src={heroImg}
             alt="Operação de mineração a céu aberto"
-            className="w-full h-full object-cover opacity-80"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/80 to-black/70" />
         </div>
         <div className="relative max-w-6xl mx-auto section-padding py-28">
           <div className="max-w-3xl">
-            <p className="text-xs tracking-[0.3em] uppercase text-red-500 mb-4">Sobre a Altian</p>
-            <h1 className="font-heading text-4xl md:text-6xl font-bold leading-tight mb-5">Sobre a Altian</h1>
-            <p className="text-lg md:text-2xl text-slate-200 leading-relaxed mb-6">
+            <p className="text-xs tracking-[0.3em] uppercase text-red-400 mb-4">Sobre a Altian</p>
+            <h1 className="font-heading text-4xl md:text-6xl font-bold leading-tight mb-5 text-white">Sobre a Altian</h1>
+            <p className="text-lg md:text-2xl text-slate-100 leading-relaxed mb-6 font-semibold">
               Tecnologia para a próxima geração da mineração.
             </p>
-            <p className="text-base md:text-lg text-slate-300 max-w-2xl">
+            <p className="text-base md:text-lg text-slate-200 max-w-2xl">
               A Altian traz tecnologia de última geração para operações de mineração que buscam mais segurança,
               produtividade e eficiência operacional.
             </p>
