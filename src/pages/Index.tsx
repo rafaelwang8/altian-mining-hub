@@ -6,7 +6,7 @@ import {
 import Layout from "@/components/Layout";
 import heroImg from "@/assets/hero-mine-new.jpg";
 import truckImg from "@/assets/truck-rear.jpg";
-import techImg from "@/assets/autonomous-tech-new.jpg";
+import techImg from "@/assets/LIDAR RADAR CAM.png";
 import excavatorImg from "@/assets/excavator-new.jpg";
 import supportImg from "@/assets/support-team-new.jpg";
 import miningImg from "@/assets/mining-operation-new.jpg";
