@@ -11,6 +11,7 @@ import excavatorImg from "@/assets/excavator-new.jpg";
 import supportImg from "@/assets/support-team-new.jpg";
 import miningImg from "@/assets/mining-operation-new.jpg";
 import miningProvenImg from "@/assets/mining-proven.jpg";
+import altianLogo from "@/assets/reduzido-fundo.png";
 
 const Index = () => {
   return (
@@ -34,6 +35,7 @@ const Index = () => {
 
         <div className="relative z-10 max-w-7xl mx-auto section-padding w-full">
           <div className="max-w-3xl">
+            <img src={altianLogo} alt="Logo Altian" className="h-16 mb-4 object-contain" />
             <div className="flex items-center gap-3 mb-8">
               <div className="h-px w-12 bg-primary" />
               <span className="text-primary text-xs font-bold tracking-widest uppercase">
