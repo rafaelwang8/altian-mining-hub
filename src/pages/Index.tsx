@@ -98,24 +98,7 @@ const Index = () => {
               <div className="h-px w-8 bg-primary" />
               <span className="text-primary text-xs font-bold tracking-widest uppercase">Sobre a Altian</span>
             </div>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight mb-8">
-              Tecnologia de mineração de próxima geração para o Brasil
-            </h2>
-            <div className="industrial-border pl-6 mb-8">
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                A Altian é a empresa brasileira que traz equipamentos e sistemas operacionais de mineração de próxima geração ao setor nacional.
-              </p>
-            </div>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Com expertise em operações de mineração de grande escala, disponibilizamos tecnologia global de ponta adaptada à realidade das minas brasileiras. Nosso portfólio inclui caminhões autônomos elétricos, escavadeiras controladas remotamente e sistemas inteligentes de gestão de frota.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-10">
-              Trabalhamos com as principais mineradoras do mundo para entregar operações mais seguras, produtivas e sustentáveis — eliminando a exposição de operadores a ambientes de risco e reduzindo custos operacionais por tonelada.
-            </p>
 
-            <div className="grid sm:grid-cols-2 gap-4">
-              {[
-              "Caminhões autônomos elétricos",
               "Sistemas de percepção LIDAR e radar",
               "Despacho inteligente de frota",
               "Operação remota segura"].
