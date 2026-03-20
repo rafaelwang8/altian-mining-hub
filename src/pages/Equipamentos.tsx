@@ -35,17 +35,6 @@ const Equipamentos = () => (
     <section className="section-padding bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-0 border border-border mb-px">
-          {/* Image */}
-          <div className="relative overflow-hidden">
-            <img
-              src={truckImg}
-              alt="Caminhão autônomo elétrico de mineração"
-              className="w-full h-full object-cover min-h-[560px]"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/10" />
-            <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
-          </div>
-
           {/* Specs */}
           <div className="p-10 lg:p-14 bg-card">
             <div className="flex items-center gap-2 mb-3">
