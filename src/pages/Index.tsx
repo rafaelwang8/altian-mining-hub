@@ -89,25 +89,7 @@ const Index = () => {
           </div>
         </div>
 
-        {/* bottom stats bar */}
-        <div className="absolute bottom-0 left-0 right-0 border-t border-border bg-background/80 backdrop-blur-sm">
-          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 xl:px-32 py-5 grid grid-cols-3 divide-x divide-border">
-            {[
-              { value: "100T", label: "Capacidade de Carga" },
-              { value: "800kWh", label: "Capacidade da Bateria" },
-              { value: "L4", label: "Autonomia de Condução" },
-            ].map(({ value, label }) => (
-              <div key={label} className="px-6 first:pl-0 last:pr-0">
-                <div className="font-heading text-2xl font-bold text-primary">
-                  {value}
-                </div>
-                <div className="text-xs text-muted-foreground uppercase tracking-wider mt-0.5">
-                  {label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+
       </section>
 
       {/* ── SOBRE ─────────────────────────────────────────────────── */}
