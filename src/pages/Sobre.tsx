@@ -31,7 +31,6 @@ const Sobre = () => {
         </div>
         <div className="relative max-w-6xl mx-auto section-padding py-28">
           <div className="max-w-3xl">
-            <p className="text-xs tracking-[0.3em] uppercase text-red-400 mb-4">Sobre a Altian</p>
             <h1 className="font-heading text-4xl md:text-6xl font-bold leading-tight mb-5 text-white">Sobre a Altian</h1>
             <p className="text-lg md:text-2xl text-slate-100 leading-relaxed mb-6 font-semibold">
               Tecnologia para a próxima geração da mineração.
