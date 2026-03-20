@@ -51,7 +51,7 @@ const Sobre = () => {
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-5">Quem Somos</h2>
             <p className="text-base md:text-lg leading-relaxed mb-4">
               A Altian é uma empresa focada em trazer tecnologias avançadas para operações de mineração de grande escala.
-            </p
+            </p>
             <p className="text-base md:text-lg leading-relaxed mb-4">
               Nosso objetivo é apoiar mineradoras na evolução de suas operações por meio da adoção de equipamentos autônomos,
               eletrificação da frota e sistemas inteligentes de gestão operacional.
