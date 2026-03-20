@@ -48,7 +48,7 @@ const Sobre = () => {
       <section className="section-padding bg-slate-950 text-slate-200">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-red-500 mb-2">Quem Somos</p>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-5">Quem Somos</h2>
             <p className="text-base md:text-lg leading-relaxed mb-4">
               A Altian é uma empresa focada em trazer tecnologias avançadas para operações de mineração de grande escala.
             </p
@@ -91,7 +91,6 @@ const Sobre = () => {
       <section className="section-padding bg-slate-950 text-slate-200">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
-            <p className="text-xs uppercase tracking-[0.3em] text-red-500 mb-2">Nossos Valores</p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white">Nossos Valores</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-4">
@@ -128,7 +127,6 @@ const Sobre = () => {
       <section className="section-padding bg-[#0b1223] text-slate-200">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-red-500 mb-2">Tecnologia e Inovação</p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">Tecnologia e Inovação</h2>
             <p className="text-base leading-relaxed mb-6">
               A Altian atua na introdução de tecnologias avançadas para operações de mineração, incluindo:
@@ -154,7 +152,6 @@ const Sobre = () => {
       <section className="section-padding bg-slate-950 text-slate-200">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-red-500 mb-2">Parcerias Tecnológicas Globais</p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">Parcerias Tecnológicas Globais</h2>
             <p className="text-base leading-relaxed mb-4">
               A Altian trabalha em colaboração com parceiros tecnológicos internacionais para trazer ao Brasil equipamentos e sistemas avançados.
@@ -172,7 +169,6 @@ const Sobre = () => {
       {/* Setor de Mineração */}
       <section className="section-padding bg-[#0f172a] text-slate-200">
         <div className="max-w-6xl mx-auto">
-          <p className="text-xs uppercase tracking-[0.3em] text-red-500 mb-2">Foco no Setor de Mineração</p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">Foco no Setor de Mineração</h2>
           <div className="grid md:grid-cols-2 gap-4 text-sm text-slate-300 leading-relaxed">
             <div>
