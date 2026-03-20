@@ -25,7 +25,7 @@ import supportImg from "@/assets/support-team-new.jpg";
 import miningImg from "@/assets/mining-operation-new.jpg";
 import miningProvenImg from "@/assets/mining-proven.jpg";
 import altianLogo from "@/assets/reduzido-fundo.png";
-import caminhaoAltianImg from "@/assets/Caminhão Altian.png";
+
 
 const Index = () => {
   return (
@@ -309,14 +309,6 @@ const Index = () => {
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">
             Caminhão Autônomo Elétrico
           </h2>
-          <div className="mb-10 text-center">
-            <img
-              src={caminhaoAltianImg}
-              alt="Caminhão Altian"
-              className="mx-auto h-56 md:h-72 object-contain"
-            />
-          </div>
-
           <div className="grid lg:grid-cols-2 gap-0 border border-border">
             {/* image */}
             <div className="relative overflow-hidden">
