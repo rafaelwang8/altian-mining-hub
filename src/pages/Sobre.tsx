@@ -49,10 +49,9 @@ const Sobre = () => {
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-red-500 mb-2">Quem Somos</p>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-5">Quem Somos</h2>
             <p className="text-base md:text-lg leading-relaxed mb-4">
               A Altian é uma empresa focada em trazer tecnologias avançadas para operações de mineração de grande escala.
-            </p>
+            </p
             <p className="text-base md:text-lg leading-relaxed mb-4">
               Nosso objetivo é apoiar mineradoras na evolução de suas operações por meio da adoção de equipamentos autônomos,
               eletrificação da frota e sistemas inteligentes de gestão operacional.
@@ -73,7 +72,6 @@ const Sobre = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
           <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl">
             <p className="text-xs uppercase tracking-[0.3em] text-red-500 mb-2">Nossa Missão</p>
-            <h3 className="font-heading text-2xl font-bold text-white mb-3">Nossa Missão</h3>
             <p className="text-sm leading-relaxed">
               Acelerar a adoção de tecnologias avançadas na mineração que protejam vidas, aumentem a produtividade e permitam
               operações mais eficientes.
@@ -82,7 +80,6 @@ const Sobre = () => {
 
           <div className="bg-slate-900 border border-slate-700 p-6 rounded-xl">
             <p className="text-xs uppercase tracking-[0.3em] text-red-500 mb-2">Nossa Visão</p>
-            <h3 className="font-heading text-2xl font-bold text-white mb-3">Nossa Visão</h3>
             <p className="text-sm leading-relaxed">
               Ser referência na introdução e implantação de tecnologias avançadas de mineração em operações de grande escala.
             </p>
