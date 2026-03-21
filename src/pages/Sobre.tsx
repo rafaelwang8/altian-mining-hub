@@ -191,7 +191,6 @@ const Sobre = () => {
       <section className="section-padding bg-slate-950 text-slate-200">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
-            <p className="text-xs uppercase tracking-[0.3em] text-red-500">Por que escolher a Altian</p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white">Por que escolher a Altian</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-4">
@@ -220,7 +219,6 @@ const Sobre = () => {
       {/* Conclusão */}
       <section className="section-padding bg-[#0b1223] text-slate-200">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-xs uppercase tracking-[0.3em] text-red-500 mb-2">Construindo o Futuro da Mineração</p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">Construindo o Futuro da Mineração</h2>
           <p className="max-w-3xl mx-auto text-base leading-relaxed mb-8">
             A Altian está comprometida em apoiar mineradoras na adoção da próxima geração de tecnologia industrial.

@@ -94,36 +94,45 @@ const Index = () => {
 
       {/* ── SOBRE ─────────────────────────────────────────────────── */}
       <section className="section-padding bg-background">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
-          <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="h-px w-8 bg-primary" />
-              <span className="text-primary text-xs font-bold tracking-widest uppercase">
-                Sobre a Altian
-              </span>
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-start">
+          <div className="space-y-8">
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-px w-8 bg-primary" />
+                <span className="text-primary text-xs font-bold tracking-widest uppercase">
+                  Sobre a Altian
+                </span>
+              </div>
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight mb-6">
+                Tecnologia de mineração de próxima geração para o Brasil
+              </h2>
+              <div className="industrial-border pl-6">
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  A Altian é a empresa brasileira que traz equipamentos e sistemas
+                  operacionais de mineração de próxima geração ao setor nacional.
+                </p>
+              </div>
             </div>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight mb-8">
-              Tecnologia de mineração de próxima geração para o Brasil
-            </h2>
-            <div className="industrial-border pl-6 mb-8">
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                A Altian é a empresa brasileira que traz equipamentos e sistemas
-                operacionais de mineração de próxima geração ao setor nacional.
-              </p>
+
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="sm:col-span-2 border border-border bg-card p-5">
+                <p className="text-muted-foreground leading-relaxed">
+                  Com expertise em operações de mineração de grande escala,
+                  disponibilizamos tecnologia global de ponta adaptada à realidade
+                  das minas brasileiras. Nosso portfólio inclui caminhões autônomos
+                  elétricos, escavadeiras controladas remotamente e sistemas
+                  inteligentes de gestão de frota.
+                </p>
+              </div>
+              <div className="sm:col-span-2 border border-border bg-card p-5">
+                <p className="text-muted-foreground leading-relaxed">
+                  Trabalhamos com as principais mineradoras do mundo para entregar
+                  operações mais seguras, produtivas e sustentáveis, eliminando a
+                  exposição de operadores a ambientes de risco e reduzindo custos
+                  operacionais por tonelada.
+                </p>
+              </div>
             </div>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Com expertise em operações de mineração de grande escala,
-              disponibilizamos tecnologia global de ponta adaptada à realidade
-              das minas brasileiras. Nosso portfólio inclui caminhões autônomos
-              elétricos, escavadeiras controladas remotamente e sistemas
-              inteligentes de gestão de frota.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-10">
-              Trabalhamos com as principais mineradoras do mundo para entregar
-              operações mais seguras, produtivas e sustentáveis — eliminando a
-              exposição de operadores a ambientes de risco e reduzindo custos
-              operacionais por tonelada.
-            </p>
 
             <div className="grid sm:grid-cols-2 gap-4">
               {[
@@ -132,11 +141,11 @@ const Index = () => {
                 "Despacho inteligente de frota",
                 "Operação remota segura",
               ].map((item) => (
-                <div key={item} className="flex items-start gap-3">
-                  <div className="w-5 h-5 flex items-center justify-center bg-primary/10 border border-primary/30 mt-0.5 shrink-0">
+                <div key={item} className="border border-border bg-secondary p-4">
+                  <div className="w-5 h-5 flex items-center justify-center bg-primary/10 border border-primary/30 mb-3">
                     <Check className="text-primary" size={12} />
                   </div>
-                  <span className="text-sm text-muted-foreground">{item}</span>
+                  <span className="text-sm text-muted-foreground leading-relaxed">{item}</span>
                 </div>
               ))}
             </div>
@@ -146,7 +155,7 @@ const Index = () => {
             <img
               src={miningImg}
               alt="Operação de mineração a céu aberto"
-              className="w-full aspect-[4/3] object-cover"
+              className="w-full aspect-[5/4] object-cover"
             />
 
             <div className="absolute inset-0 border border-border" />
@@ -531,35 +540,35 @@ const Index = () => {
 
       {/* ── OPERATIONAL SUPPORT ───────────────────────────────────── */}
       <section className="section-padding bg-background">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-start">
           <div className="relative">
             <img
               src={supportImg}
               alt="Equipe técnica de suporte Altian"
-              className="w-full aspect-[4/3] object-cover"
+              className="w-full aspect-[5/4] object-cover"
             />
 
             <div className="absolute inset-0 border border-border" />
             <div className="absolute top-0 left-0 right-0 h-0.5 bg-primary" />
           </div>
 
-          <div>
+          <div className="space-y-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-8 bg-primary" />
               <span className="text-primary text-xs font-bold tracking-widest uppercase">
                 Suporte
               </span>
             </div>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight mb-8">
+            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight mb-6">
               Suporte Operacional Completo
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-10">
+            <p className="text-muted-foreground leading-relaxed">
               Acompanhamos cada etapa da operação com serviços técnicos
               especializados para garantir máxima disponibilidade e desempenho
               dos equipamentos.
             </p>
 
-            <div className="space-y-4">
+            <div className="grid sm:grid-cols-2 gap-4">
               {[
                 {
                   icon: HardHat,
@@ -584,13 +593,13 @@ const Index = () => {
               ].map(({ icon: Icon, title, desc }) => (
                 <div
                   key={title}
-                  className="flex items-start gap-4 p-5 bg-secondary border border-border hover:border-primary/30 transition-colors"
+                  className="p-5 bg-secondary border border-border hover:border-primary/30 transition-colors"
                 >
-                  <div className="w-10 h-10 flex items-center justify-center bg-primary/10 border border-primary/20 shrink-0">
+                  <div className="w-10 h-10 flex items-center justify-center bg-primary/10 border border-primary/20 mb-4">
                     <Icon className="text-primary" size={18} />
                   </div>
                   <div>
-                    <h3 className="font-heading text-sm font-bold text-foreground mb-1">
+                    <h3 className="font-heading text-sm font-bold text-foreground mb-2">
                       {title}
                     </h3>
                     <p className="text-xs text-muted-foreground leading-relaxed">
