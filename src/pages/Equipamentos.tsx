@@ -178,16 +178,27 @@ const Equipamentos = () => (
     </section>
 
     <section id="escavadeira-remota" className="py-20 section-padding bg-secondary scroll-mt-24">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-start">
-        <div className="order-2 lg:order-1">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-[0.95fr_1.05fr] gap-10 items-start">
+        <div className="order-2 lg:order-1 space-y-4">
           <div className="relative">
             <img src={excavatorImg} alt="Escavadeira controlada remotamente" className="w-full aspect-[5/4] object-cover" />
             <div className="absolute inset-0 border border-border" />
             <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
           </div>
+
+          <div className="grid sm:grid-cols-2 gap-3">
+            {excavatorHighlights.map((item) => (
+              <div key={item} className="border border-border bg-card p-4">
+                <div className="w-8 h-8 flex items-center justify-center border border-primary/30 bg-primary/10 mb-3">
+                  <HardHat size={16} className="text-primary" />
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="order-1 lg:order-2 space-y-8">
+        <div className="order-1 lg:order-2 space-y-6">
           <div>
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-8 bg-primary" />
@@ -201,17 +212,6 @@ const Equipamentos = () => (
               controlado. O resultado é mais segurança nas frentes de lavra, melhor ergonomia para a equipe e mais controle
               sobre a operação em cenários complexos.
             </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 gap-4">
-            {excavatorHighlights.map((item) => (
-              <div key={item} className="border border-border bg-card p-5">
-                <div className="w-8 h-8 flex items-center justify-center border border-primary/30 bg-primary/10 mb-3">
-                  <HardHat size={16} className="text-primary" />
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">{item}</p>
-              </div>
-            ))}
           </div>
 
           <div className="space-y-0 border border-border divide-y divide-border bg-card">

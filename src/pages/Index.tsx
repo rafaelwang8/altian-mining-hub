@@ -94,8 +94,8 @@ const Index = () => {
 
       {/* ── SOBRE ─────────────────────────────────────────────────── */}
       <section className="section-padding bg-background">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-start">
-          <div className="space-y-8">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
+          <div className="space-y-6">
             <div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="h-px w-8 bg-primary" />
@@ -106,7 +106,7 @@ const Index = () => {
               <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight mb-6">
                 Tecnologia de mineração de próxima geração para o Brasil
               </h2>
-              <div className="industrial-border pl-6">
+              <div className="industrial-border pl-5">
                 <p className="text-muted-foreground leading-relaxed text-lg">
                   A Altian é a empresa brasileira que traz equipamentos e sistemas
                   operacionais de mineração de próxima geração ao setor nacional.
@@ -114,8 +114,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="sm:col-span-2 border border-border bg-card p-5">
+            <div className="grid sm:grid-cols-2 gap-3">
+              <div className="sm:col-span-2 border border-border bg-card p-4">
                 <p className="text-muted-foreground leading-relaxed">
                   Com expertise em operações de mineração de grande escala,
                   disponibilizamos tecnologia global de ponta adaptada à realidade
@@ -124,7 +124,7 @@ const Index = () => {
                   inteligentes de gestão de frota.
                 </p>
               </div>
-              <div className="sm:col-span-2 border border-border bg-card p-5">
+              <div className="sm:col-span-2 border border-border bg-card p-4">
                 <p className="text-muted-foreground leading-relaxed">
                   Trabalhamos com as principais mineradoras do mundo para entregar
                   operações mais seguras, produtivas e sustentáveis, eliminando a
@@ -134,18 +134,20 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-4">
+            <div className="grid sm:grid-cols-2 gap-3">
               {[
                 "Caminhões autônomos elétricos",
                 "Sistemas de percepção LIDAR e radar",
                 "Despacho inteligente de frota",
                 "Operação remota segura",
               ].map((item) => (
-                <div key={item} className="border border-border bg-secondary p-4">
-                  <div className="w-5 h-5 flex items-center justify-center bg-primary/10 border border-primary/30 mb-3">
+                <div key={item} className="border border-border bg-secondary px-4 py-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-5 h-5 flex items-center justify-center bg-primary/10 border border-primary/30 mt-0.5 shrink-0">
                     <Check className="text-primary" size={12} />
                   </div>
-                  <span className="text-sm text-muted-foreground leading-relaxed">{item}</span>
+                    <span className="text-sm text-muted-foreground leading-relaxed">{item}</span>
+                  </div>
                 </div>
               ))}
             </div>
@@ -155,7 +157,7 @@ const Index = () => {
             <img
               src={miningImg}
               alt="Operação de mineração a céu aberto"
-              className="w-full aspect-[5/4] object-cover"
+              className="w-full aspect-[4/3] object-cover"
             />
 
             <div className="absolute inset-0 border border-border" />

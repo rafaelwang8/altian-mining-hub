@@ -191,7 +191,7 @@ const Sobre = () => {
       <section className="section-padding bg-slate-950 text-slate-200">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-white">Por que escolher a Altian</h2>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-white">Por que escolher a Altian?</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-4">
             {[{
