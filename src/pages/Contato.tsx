@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import Layout from "@/components/Layout";
-import { Mail, Phone, ArrowRight } from "lucide-react";
+import { Mail, ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contato = () => {
   const { toast } = useToast();
   const contactEmail = "rafael.wang@altian.com.br";
+  const displayEmail = "contato@altian.com.br";
   const [form, setForm] = useState({
     empresa: "",
     nome: "",
@@ -212,24 +213,9 @@ const Contato = () => {
                   </div>
                   <div>
                     <div className="text-xs text-muted-foreground uppercase tracking-wider mb-0.5">Email</div>
-                    <div className="text-sm text-foreground font-medium">{contactEmail}</div>
+                    <div className="text-sm text-foreground font-medium">{displayEmail}</div>
                   </div>
                 </div>
-
-                <a
-                  href="https://wa.me/5531996141102?text=Olá, gostaria de conversar sobre automação de mina"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-start gap-4 hover:opacity-80 transition-opacity"
-                >
-                  <div className="w-10 h-10 flex items-center justify-center bg-primary/10 border border-primary/20 shrink-0">
-                    <Phone className="text-primary" size={16} />
-                  </div>
-                  <div>
-                    <div className="text-xs text-muted-foreground uppercase tracking-wider mb-0.5">Telefone</div>
-                    <div className="text-sm text-foreground font-medium">+55 (31) 99614-1102</div>
-                  </div>
-                </a>
               </div>
             </div>
 
