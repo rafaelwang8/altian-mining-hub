@@ -140,7 +140,7 @@ const Equipamentos = () => (
 
     <section id="caminhao-autonomo" className="section-padding bg-background scroll-mt-24">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
-        <div>
+        <div className="space-y-10">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px w-8 bg-primary" />
             <span className="text-primary text-xs font-bold tracking-widest uppercase">Caminhão Autônomo</span>
@@ -165,11 +165,16 @@ const Equipamentos = () => (
             ))}
           </div>
 
-          <div className="space-y-0 border border-border divide-y divide-border">
-            {truckSpecs.map(({ label, value }) => (
-              <div key={label} className="flex items-center justify-between px-5 py-3.5 gap-4">
-                <span className="text-xs text-muted-foreground uppercase tracking-wider">{label}</span>
-                <span className="text-sm font-heading font-bold text-foreground text-right">{value}</span>
+          <div className="grid sm:grid-cols-3 gap-px bg-border border border-border">
+            {[
+              { icon: BatteryCharging, title: "Troca rápida", desc: "Bateria substituída em minutos para manter a operação contínua." },
+              { icon: Gauge, title: "Uptime", desc: "Arquitetura pensada para turnos extensos e alta disponibilidade." },
+              { icon: Zap, title: "Energia limpa", desc: "Propulsão elétrica para reduzir emissões e custo energético." },
+            ].map(({ icon: Icon, title, desc }) => (
+              <div key={title} className="bg-secondary p-6">
+                <Icon className="text-primary mb-3" size={18} />
+                <h3 className="font-heading text-sm font-bold text-foreground mb-2">{title}</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -181,16 +186,12 @@ const Equipamentos = () => (
             <div className="absolute inset-0 border border-border" />
             <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
           </div>
-          <div className="grid sm:grid-cols-3 gap-px bg-border border border-border">
-            {[
-              { icon: BatteryCharging, title: "Troca rápida", desc: "Bateria substituída em minutos para manter a operação contínua." },
-              { icon: Gauge, title: "Uptime", desc: "Arquitetura pensada para turnos extensos e alta disponibilidade." },
-              { icon: Zap, title: "Energia limpa", desc: "Propulsão elétrica para reduzir emissões e custo energético." },
-            ].map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="bg-secondary p-6">
-                <Icon className="text-primary mb-3" size={18} />
-                <h3 className="font-heading text-sm font-bold text-foreground mb-2">{title}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">{desc}</p>
+
+          <div className="space-y-0 border border-border divide-y divide-border bg-card">
+            {truckSpecs.map(({ label, value }) => (
+              <div key={label} className="flex items-center justify-between px-5 py-3.5 gap-4">
+                <span className="text-xs text-muted-foreground uppercase tracking-wider">{label}</span>
+                <span className="text-sm font-heading font-bold text-foreground text-right">{value}</span>
               </div>
             ))}
           </div>
