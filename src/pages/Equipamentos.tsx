@@ -165,19 +165,6 @@ const Equipamentos = () => (
             ))}
           </div>
 
-          <div className="grid sm:grid-cols-3 gap-px bg-border border border-border">
-            {[
-              { icon: BatteryCharging, title: "Troca rápida", desc: "Bateria substituída em minutos para manter a operação contínua." },
-              { icon: Gauge, title: "Uptime", desc: "Arquitetura pensada para turnos extensos e alta disponibilidade." },
-              { icon: Zap, title: "Energia limpa", desc: "Propulsão elétrica para reduzir emissões e custo energético." },
-            ].map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="bg-secondary p-6">
-                <Icon className="text-primary mb-3" size={18} />
-                <h3 className="font-heading text-sm font-bold text-foreground mb-2">{title}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">{desc}</p>
-              </div>
-            ))}
-          </div>
         </div>
 
         <div className="space-y-6">
@@ -192,6 +179,20 @@ const Equipamentos = () => (
               <div key={label} className="flex items-center justify-between px-5 py-3.5 gap-4">
                 <span className="text-xs text-muted-foreground uppercase tracking-wider">{label}</span>
                 <span className="text-sm font-heading font-bold text-foreground text-right">{value}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid sm:grid-cols-3 gap-px bg-border border border-border">
+            {[
+              { icon: BatteryCharging, title: "Troca rápida", desc: "Bateria substituída em minutos para manter a operação contínua." },
+              { icon: Gauge, title: "Uptime", desc: "Arquitetura pensada para turnos extensos e alta disponibilidade." },
+              { icon: Zap, title: "Energia limpa", desc: "Propulsão elétrica para reduzir emissões e custo energético." },
+            ].map(({ icon: Icon, title, desc }) => (
+              <div key={title} className="bg-secondary p-6">
+                <Icon className="text-primary mb-3" size={18} />
+                <h3 className="font-heading text-sm font-bold text-foreground mb-2">{title}</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
