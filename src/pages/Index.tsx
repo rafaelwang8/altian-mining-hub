@@ -73,14 +73,14 @@ const Index = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                to="/contato"
+                to="/contato#formulario"
                 className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors"
               >
                 Falar com nossa equipe
                 <ArrowRight size={16} className="ml-3" />
               </Link>
               <Link
-                to="/contato"
+                to="/contato#formulario"
                 className="inline-flex items-center justify-center border border-metallic/40 text-foreground px-8 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:border-primary hover:text-primary transition-colors"
               >
                 Solicitar apresentação técnica
@@ -639,7 +639,7 @@ const Index = () => {
             sua mina.
           </p>
           <Link
-            to="/contato"
+            to="/contato#formulario"
             className="inline-flex items-center justify-center bg-primary text-primary-foreground px-12 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors glow-yellow"
           >
             Entrar em contato com a Altian

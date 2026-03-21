@@ -228,7 +228,7 @@ const Sobre = () => {
             de mineração mais seguras, produtivas e eficientes.
           </p>
           <Link
-            to="/contato"
+            to="/contato#formulario"
             className="inline-flex items-center justify-center bg-red-500 text-white px-8 py-3 uppercase text-xs tracking-[0.15em] font-bold hover:bg-red-400 transition-colors"
           >
             Fale com nossa equipe

@@ -35,7 +35,7 @@ const Navbar = () => {
             </Link>
           )}
           <Link
-            to="/contato"
+            to="/contato#formulario"
             className="bg-primary text-primary-foreground px-6 py-2.5 text-xs font-bold tracking-widest uppercase hover:bg-primary/90 transition-colors">
             
             Fale Conosco
@@ -62,7 +62,7 @@ const Navbar = () => {
             </Link>
         )}
           <Link
-          to="/contato"
+          to="/contato#formulario"
           onClick={() => setOpen(false)}
           className="inline-block mt-2 bg-primary text-primary-foreground px-6 py-2.5 text-xs font-bold tracking-widest uppercase">
           

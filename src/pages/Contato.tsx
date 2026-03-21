@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Layout from "@/components/Layout";
-import { Mail, Phone, MapPin, ArrowRight, Building2, User, AtSign, PhoneCall, Landmark, MessageSquare } from "lucide-react";
+import { Mail, Phone, ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contato = () => {
   const { toast } = useToast();
+  const contactEmail = "rafael.wang@altian.com.br";
   const [form, setForm] = useState({
     empresa: "",
     nome: "",
@@ -15,55 +16,58 @@ const Contato = () => {
   });
   const [isLoading, setIsLoading] = useState(false);
 
+  useEffect(() => {
+    if (window.location.hash === "#formulario") {
+      window.requestAnimationFrame(() => {
+        document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     setIsLoading(true);
 
-    // Prefer Formspree se estiver configurado;
-    // caso contrário, fallback para mailto direto ao responsável.
-    const formspreeId = import.meta.env.VITE_FORMSPREE_ID;
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${contactEmail}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `Contato Altian: ${form.nome} - ${form.empresa}`,
+          _captcha: "false",
+          _template: "table",
+          empresa: form.empresa,
+          nome: form.nome,
+          email: form.email,
+          telefone: form.telefone,
+          localizacao: form.localizacao,
+          mensagem: form.mensagem,
+        }),
+      });
 
-    if (formspreeId && formspreeId !== "YOUR_FORM_ID_HERE") {
-      try {
-        const formData = new FormData();
-        formData.append("empresa", form.empresa);
-        formData.append("nome", form.nome);
-        formData.append("email", form.email);
-        formData.append("telefone", form.telefone);
-        formData.append("localizacao", form.localizacao);
-        formData.append("message", form.mensagem);
-
-        const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
-          method: "POST",
-          body: formData,
-        });
-
-        if (!response.ok) {
-          throw new Error("Erro ao enviar mensagem via Formspree");
-        }
-      } catch (error) {
-        setIsLoading(false);
-        toast({
-          title: "Erro ao enviar",
-          description: "Não foi possível enviar pelo Formspree. Tente novamente mais tarde.",
-          variant: "destructive",
-        });
-        return;
+      if (!response.ok) {
+        throw new Error("Falha no envio do formulário");
       }
-    } else {
-      const subject = `Contato Altian: ${form.nome} - ${form.empresa}`;
-      const body = `Empresa: ${form.empresa}%0ANome: ${form.nome}%0AEmail: ${form.email}%0ATelefone: ${form.telefone}%0ALocalização: ${form.localizacao}%0A%0AMensagem:%0A${form.mensagem}`;
-      window.location.href = `mailto:rafael.wang@altian.com.br?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+      toast({
+        title: "Mensagem enviada",
+        description: `Recebemos seus dados e o formulário foi encaminhado para ${contactEmail}.`,
+      });
+
+      setForm({ empresa: "", nome: "", email: "", telefone: "", localizacao: "", mensagem: "" });
+    } catch (error) {
+      toast({
+        title: "Erro ao enviar",
+        description: "Não foi possível enviar o formulário agora. Tente novamente em instantes.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
     }
-
-    toast({
-      title: "Mensagem preparada",
-      description: "O formulário será encaminhado para rafael.wang@altian.com.br.",
-    });
-
-    setForm({ empresa: "", nome: "", email: "", telefone: "", localizacao: "", mensagem: "" });
-    setIsLoading(false);
   };
 
   const inputClass =
@@ -91,7 +95,7 @@ const Contato = () => {
       </section>
 
       {/* Form */}
-      <section className="section-padding bg-secondary pt-0">
+      <section id="formulario" className="section-padding bg-secondary pt-0 scroll-mt-24">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-16">
           {/* Form */}
           <form onSubmit={handleSubmit} className="lg:col-span-2 space-y-5">
@@ -208,7 +212,7 @@ const Contato = () => {
                   </div>
                   <div>
                     <div className="text-xs text-muted-foreground uppercase tracking-wider mb-0.5">Email</div>
-                    <div className="text-sm text-foreground font-medium">contato@altian.com.br</div>
+                    <div className="text-sm text-foreground font-medium">{contactEmail}</div>
                   </div>
                 </div>
 
