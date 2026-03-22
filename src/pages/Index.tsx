@@ -18,7 +18,7 @@ import {
 "lucide-react";
 import Layout from "@/components/Layout";
 import heroImg from "@/assets/hero-mine-new.jpg";
-import truckImg from "@/assets/truck-rear.jpg";
+
 import techImg from "@/assets/radar lidar caminhao camera.png";
 import excavatorImg from "@/assets/excavator-new.jpg";
 import supportImg from "@/assets/support-team-new.jpg";
