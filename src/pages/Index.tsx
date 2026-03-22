@@ -303,6 +303,7 @@ const Index = () => {
 
 
 
+
               <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/20" />
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
             </div>
