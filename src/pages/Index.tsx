@@ -92,86 +92,79 @@ const Index = () => {
 
       </section>
 
-      {/* ── SOBRE ─────────────────────────────────────────────────── */}
-      <section className="section-padding bg-background">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
-          <div className="space-y-6">
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-8 bg-primary" />
-                <span className="text-primary text-xs font-bold tracking-widest uppercase">
-                  Sobre a Altian
-                </span>
-              </div>
-              <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight mb-6">
-                Tecnologia de mineração de próxima geração para o Brasil
-              </h2>
-              <div className="industrial-border pl-5">
-                <p className="text-muted-foreground leading-relaxed text-lg">
-                  A Altian é a empresa brasileira que traz equipamentos e sistemas
-                  operacionais de mineração de próxima geração ao setor nacional.
-                </p>
-              </div>
+      {/* ── PROVEN TECHNOLOGY ─────────────────────────────────────── */}
+      <section className="relative section-padding overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src={miningProvenImg}
+            alt=""
+            className="w-full h-full object-cover"
+            aria-hidden="true"
+          />
+          <div className="absolute inset-0 bg-background/92" />
+        </div>
+        <div className="relative max-w-7xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="h-px w-8 bg-primary" />
+              <span className="text-primary text-xs font-bold tracking-widest uppercase">
+                Confiabilidade Comprovada
+              </span>
+              <div className="h-px w-8 bg-primary" />
             </div>
-
-            <div className="grid sm:grid-cols-2 gap-3">
-              <div className="sm:col-span-2 border border-border bg-card p-4">
-                <p className="text-muted-foreground leading-relaxed">
-                  Com expertise em operações de mineração de grande escala,
-                  disponibilizamos tecnologia global de ponta adaptada à realidade
-                  das minas brasileiras. Nosso portfólio inclui caminhões autônomos
-                  elétricos, escavadeiras controladas remotamente e sistemas
-                  inteligentes de gestão de frota.
-                </p>
-              </div>
-              <div className="sm:col-span-2 border border-border bg-card p-4">
-                <p className="text-muted-foreground leading-relaxed">
-                  Trabalhamos com as principais mineradoras do mundo para entregar
-                  operações mais seguras, produtivas e sustentáveis, eliminando a
-                  exposição de operadores a ambientes de risco e reduzindo custos
-                  operacionais por tonelada.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid sm:grid-cols-2 gap-3">
-              {[
-                "Caminhões autônomos elétricos",
-                "Sistemas de percepção LIDAR e radar",
-                "Despacho inteligente de frota",
-                "Operação remota segura",
-              ].map((item) => (
-                <div key={item} className="border border-border bg-secondary px-4 py-3">
-                  <div className="flex items-start gap-3">
-                    <div className="w-5 h-5 flex items-center justify-center bg-primary/10 border border-primary/30 mt-0.5 shrink-0">
-                    <Check className="text-primary" size={12} />
-                  </div>
-                    <span className="text-sm text-muted-foreground leading-relaxed">{item}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
+              Tecnologia de Mineração Comprovada
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              A tecnologia Altian já está implantada em operações de mineração
+              de grande escala ao redor do mundo.
+            </p>
           </div>
 
-          <div className="relative">
-            <img
-              src={miningImg}
-              alt="Operação de mineração a céu aberto"
-              className="w-full aspect-[4/3] object-cover"
-            />
-
-            <div className="absolute inset-0 border border-border" />
-            <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 border border-border bg-background/80 flex items-center justify-center">
-              <div className="text-center">
-                <div className="font-heading text-2xl font-bold text-primary">
-                  24/7
-                </div>
-                <div className="text-xs text-muted-foreground uppercase tracking-wider">
-                  Operação
+          <div className="grid md:grid-cols-3 gap-px bg-border mb-16">
+            {[
+              { stat: "500+", label: "Caminhões Autônomos Implantados" },
+              { stat: "50M+", label: "Quilômetros de Operação Autônoma" },
+              { stat: "10+", label: "Frotas de Grande Escala em Operação" },
+            ].map(({ stat, label }) => (
+              <div key={label} className="bg-card p-10 text-center">
+                <div className="stat-number mb-3">{stat}</div>
+                <div className="text-xs text-muted-foreground uppercase tracking-widest font-medium">
+                  {label}
                 </div>
               </div>
-            </div>
+            ))}
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              {
+                title: "Validado em Campo",
+                desc: "Tecnologia testada e validada nas condições mais severas de operação em minas a céu aberto.",
+              },
+              {
+                title: "Padrão Internacional",
+                desc: "Equipamentos com certificação para operação em grandes mineradoras globais.",
+              },
+              {
+                title: "Suporte Contínuo",
+                desc: "Time de engenharia dedicado para suporte técnico 24/7 em operação.",
+              },
+              {
+                title: "Integração Comprovada",
+                desc: "Integração com sistemas de gestão de mina e despacho operacional já utilizados.",
+              },
+            ].map(({ title, desc }) => (
+              <div key={title} className="bg-card border border-border p-6">
+                <div className="h-0.5 w-8 bg-primary mb-4" />
+                <h3 className="font-heading text-sm font-bold text-foreground mb-2">
+                  {title}
+                </h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  {desc}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -383,79 +376,86 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── PROVEN TECHNOLOGY ─────────────────────────────────────── */}
-      <section className="relative section-padding overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src={miningProvenImg}
-            alt=""
-            className="w-full h-full object-cover"
-            aria-hidden="true"
-          />
-          <div className="absolute inset-0 bg-background/92" />
-        </div>
-        <div className="relative max-w-7xl mx-auto">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="h-px w-8 bg-primary" />
-              <span className="text-primary text-xs font-bold tracking-widest uppercase">
-                Confiabilidade Comprovada
-              </span>
-              <div className="h-px w-8 bg-primary" />
-            </div>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Tecnologia de Mineração Comprovada
-            </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              A tecnologia Altian já está implantada em operações de mineração
-              de grande escala ao redor do mundo.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-px bg-border mb-16">
-            {[
-              { stat: "500+", label: "Caminhões Autônomos Implantados" },
-              { stat: "50M+", label: "Quilômetros de Operação Autônoma" },
-              { stat: "10+", label: "Frotas de Grande Escala em Operação" },
-            ].map(({ stat, label }) => (
-              <div key={label} className="bg-card p-10 text-center">
-                <div className="stat-number mb-3">{stat}</div>
-                <div className="text-xs text-muted-foreground uppercase tracking-widest font-medium">
-                  {label}
-                </div>
+      {/* ── SOBRE ─────────────────────────────────────────────────── */}
+      <section className="section-padding bg-background">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
+          <div className="space-y-6">
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-px w-8 bg-primary" />
+                <span className="text-primary text-xs font-bold tracking-widest uppercase">
+                  Sobre a Altian
+                </span>
               </div>
-            ))}
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              {
-                title: "Validado em Campo",
-                desc: "Tecnologia testada e validada nas condições mais severas de operação em minas a céu aberto.",
-              },
-              {
-                title: "Padrão Internacional",
-                desc: "Equipamentos com certificação para operação em grandes mineradoras globais.",
-              },
-              {
-                title: "Suporte Contínuo",
-                desc: "Time de engenharia dedicado para suporte técnico 24/7 em operação.",
-              },
-              {
-                title: "Integração Comprovada",
-                desc: "Integração com sistemas de gestão de mina e despacho operacional já utilizados.",
-              },
-            ].map(({ title, desc }) => (
-              <div key={title} className="bg-card border border-border p-6">
-                <div className="h-0.5 w-8 bg-primary mb-4" />
-                <h3 className="font-heading text-sm font-bold text-foreground mb-2">
-                  {title}
-                </h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  {desc}
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight mb-6">
+                Tecnologia de mineração de próxima geração para o Brasil
+              </h2>
+              <div className="industrial-border pl-5">
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  A Altian é a empresa brasileira que traz equipamentos e sistemas
+                  operacionais de mineração de próxima geração ao setor nacional.
                 </p>
               </div>
-            ))}
+            </div>
+
+            <div className="grid sm:grid-cols-2 gap-3">
+              <div className="sm:col-span-2 border border-border bg-card p-4">
+                <p className="text-muted-foreground leading-relaxed">
+                  Com expertise em operações de mineração de grande escala,
+                  disponibilizamos tecnologia global de ponta adaptada à realidade
+                  das minas brasileiras. Nosso portfólio inclui caminhões autônomos
+                  elétricos, escavadeiras controladas remotamente e sistemas
+                  inteligentes de gestão de frota.
+                </p>
+              </div>
+              <div className="sm:col-span-2 border border-border bg-card p-4">
+                <p className="text-muted-foreground leading-relaxed">
+                  Trabalhamos com as principais mineradoras do mundo para entregar
+                  operações mais seguras, produtivas e sustentáveis, eliminando a
+                  exposição de operadores a ambientes de risco e reduzindo custos
+                  operacionais por tonelada.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid sm:grid-cols-2 gap-3">
+              {[
+                "Caminhões autônomos elétricos",
+                "Sistemas de percepção LIDAR e radar",
+                "Despacho inteligente de frota",
+                "Operação remota segura",
+              ].map((item) => (
+                <div key={item} className="border border-border bg-secondary px-4 py-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-5 h-5 flex items-center justify-center bg-primary/10 border border-primary/30 mt-0.5 shrink-0">
+                    <Check className="text-primary" size={12} />
+                  </div>
+                    <span className="text-sm text-muted-foreground leading-relaxed">{item}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="relative">
+            <img
+              src={miningImg}
+              alt="Operação de mineração a céu aberto"
+              className="w-full aspect-[4/3] object-cover"
+            />
+
+            <div className="absolute inset-0 border border-border" />
+            <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 border border-border bg-background/80 flex items-center justify-center">
+              <div className="text-center">
+                <div className="font-heading text-2xl font-bold text-primary">
+                  24/7
+                </div>
+                <div className="text-xs text-muted-foreground uppercase tracking-wider">
+                  Operação
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
