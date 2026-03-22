@@ -9,7 +9,7 @@ import {
   Zap,
 } from "lucide-react";
 import truckImg from "@/assets/truck-rear.jpg";
-import excavatorImg from "@/assets/excavator-new.jpg";
+import excavatorImg from "@/assets/centro-de-controle.png";
 import heroImg from "@/assets/hero-mine-new.jpg";
 
 const truckHighlights = [

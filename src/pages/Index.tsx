@@ -19,7 +19,7 @@ import {
 import Layout from "@/components/Layout";
 import heroImg from "@/assets/hero-mine-new.jpg";
 
-import techImg from "@/assets/radar lidar caminhao camera.png";
+import techImg from "@/assets/autonomo-l4.png";
 import excavatorImg from "@/assets/excavator-new.jpg";
 import supportImg from "@/assets/support-team-new.jpg";
 import miningImg from "@/assets/mining-operation-new.jpg";
