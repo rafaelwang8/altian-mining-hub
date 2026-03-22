@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import heroImg from "@/assets/hero-mine-new.jpg";
-import miningImg from "@/assets/mining-operation-new.jpg";
+import miningImg from "@/assets/brasil.png";
 import truckImg from "@/assets/truck-rear.jpg";
 import lidarImg from "@/assets/LIDAR RADAR CAM.png";
 import miningTechImg from "@/assets/mining-operation-new.jpg";
