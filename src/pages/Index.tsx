@@ -301,26 +301,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── EQUIPMENT ─────────────────────────────────────────────── */}
-      <section className="section-padding bg-background">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="h-px w-8 bg-primary" />
-            <span className="text-primary text-xs font-bold tracking-widest uppercase">
-              Equipamentos
-            </span>
-          </div>
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Caminhão Autônomo Elétrico
-          </h2>
-          <div className="grid lg:grid-cols-2 gap-0 border border-border">
-            {/* image */}
-            <div className="relative overflow-hidden">
-              <img
-                src={truckImg}
-                alt="Caminhão autônomo elétrico de mineração"
-                className="w-full h-full object-cover min-h-[500px]" />
-              
+
 
               <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/20" />
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
