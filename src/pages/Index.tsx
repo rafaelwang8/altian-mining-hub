@@ -302,62 +302,6 @@ const Index = () => {
       </section>
 
 
-
-
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/20" />
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
-            </div>
-
-            {/* specs */}
-            <div className="p-10 lg:p-14 bg-card">
-              <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 px-3 py-1 mb-6">
-                <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                <span className="text-primary text-xs font-bold tracking-widest uppercase">
-                  Próxima Geração
-                </span>
-              </div>
-
-              <p className="text-muted-foreground leading-relaxed mb-10">
-                Projetado para operações de mineração de grande escala em minas
-                a céu aberto. Combina alta capacidade de carga com tecnologia de
-                condução autônoma L4 e propulsão totalmente elétrica.
-              </p>
-
-              <div className="space-y-0 border border-border divide-y divide-border mb-10">
-                {[
-                { label: "Capacidade de Carga", value: "100+ toneladas" },
-                { label: "Bateria", value: "Até 800 kWh" },
-                { label: "Sistema de Bateria", value: "Troca instantânea" },
-                { label: "Autonomia", value: "Direção L4 autônoma" },
-                { label: "Percepção", value: "LIDAR, radar e câmeras" },
-                { label: "Aplicação", value: "Minas a céu aberto" }].
-                map(({ label, value }) =>
-                <div
-                  key={label}
-                  className="flex items-center justify-between px-5 py-3.5">
-                  
-                    <span className="text-xs text-muted-foreground uppercase tracking-wider font-medium">
-                      {label}
-                    </span>
-                    <span className="text-sm font-heading font-bold text-foreground">
-                      {value}
-                    </span>
-                  </div>
-                )}
-              </div>
-
-              <Link
-                to="/equipamentos"
-                className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors w-full">
-                
-                Ver especificações completas
-                <ArrowRight size={16} className="ml-3" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── SOBRE ─────────────────────────────────────────────────── */}
       <section className="section-padding bg-background">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
