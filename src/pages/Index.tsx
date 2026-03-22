@@ -14,8 +14,8 @@ import {
   Radio,
   BatteryCharging,
   ArrowRight,
-  Check,
-} from "lucide-react";
+  Check } from
+"lucide-react";
 import Layout from "@/components/Layout";
 import heroImg from "@/assets/hero-mine-new.jpg";
 import truckImg from "@/assets/truck-rear.jpg";
@@ -36,8 +36,8 @@ const Index = () => {
           <img
             src={heroImg}
             alt="Frota autônoma de mineração operando em mina a céu aberto"
-            className="w-full h-full object-cover object-center"
-          />
+            className="w-full h-full object-cover object-center" />
+          
 
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/20" />
           <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
@@ -52,8 +52,8 @@ const Index = () => {
             <img
               src={altianLogo}
               alt="Logo Altian"
-              className="h-20 md:h-24 mb-4 object-contain"
-            />
+              className="h-20 md:h-24 mb-4 object-contain" />
+            
             <div className="flex items-center gap-3 mb-8">
               <div className="h-px w-12 bg-primary" />
               <span className="text-primary text-xs font-bold tracking-widest uppercase">
@@ -74,15 +74,15 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contato#formulario"
-                className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors"
-              >
+                className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors">
+                
                 Falar com nossa equipe
                 <ArrowRight size={16} className="ml-3" />
               </Link>
               <Link
                 to="/contato#formulario"
-                className="inline-flex items-center justify-center border border-metallic/40 text-foreground px-8 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:border-primary hover:text-primary transition-colors"
-              >
+                className="inline-flex items-center justify-center border border-metallic/40 text-foreground px-8 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:border-primary hover:text-primary transition-colors">
+                
                 Solicitar apresentação técnica
               </Link>
             </div>
@@ -99,8 +99,8 @@ const Index = () => {
             src={miningProvenImg}
             alt=""
             className="w-full h-full object-cover"
-            aria-hidden="true"
-          />
+            aria-hidden="true" />
+          
           <div className="absolute inset-0 bg-background/95" />
         </div>
         <div className="relative max-w-7xl mx-auto">
@@ -113,7 +113,7 @@ const Index = () => {
               <div className="h-px w-8 bg-primary" />
             </div>
             <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Tecnologia de Mineração Comprovada
+              Tecnologia de Mineração Testada e Validada   
             </h2>
             <p className="text-muted-foreground leading-relaxed">
               A tecnologia Altian já está implantada em operações de mineração
@@ -123,39 +123,39 @@ const Index = () => {
 
           <div className="grid md:grid-cols-3 gap-px bg-border mb-16">
             {[
-              { stat: "500+", label: "Caminhões Autônomos Implantados" },
-              { stat: "50M+", label: "Quilômetros de Operação Autônoma" },
-              { stat: "10+", label: "Frotas de Grande Escala em Operação" },
-            ].map(({ stat, label }) => (
-              <div key={label} className="bg-card p-10 text-center">
+            { stat: "500+", label: "Caminhões Autônomos Implantados" },
+            { stat: "50M+", label: "Quilômetros de Operação Autônoma" },
+            { stat: "10+", label: "Frotas de Grande Escala em Operação" }].
+            map(({ stat, label }) =>
+            <div key={label} className="bg-card p-10 text-center">
                 <div className="stat-number mb-3">{stat}</div>
                 <div className="text-xs text-muted-foreground uppercase tracking-widest font-medium">
                   {label}
                 </div>
               </div>
-            ))}
+            )}
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              {
-                title: "Validado em Campo",
-                desc: "Tecnologia testada e validada nas condições mais severas de operação em minas a céu aberto.",
-              },
-              {
-                title: "Padrão Internacional",
-                desc: "Equipamentos com certificação para operação em grandes mineradoras globais.",
-              },
-              {
-                title: "Suporte Contínuo",
-                desc: "Time de engenharia dedicado para suporte técnico 24/7 em operação.",
-              },
-              {
-                title: "Integração Comprovada",
-                desc: "Integração com sistemas de gestão de mina e despacho operacional já utilizados.",
-              },
-            ].map(({ title, desc }) => (
-              <div key={title} className="bg-card border border-border p-6">
+            {
+              title: "Validado em Campo",
+              desc: "Tecnologia testada e validada nas condições mais severas de operação em minas a céu aberto."
+            },
+            {
+              title: "Padrão Internacional",
+              desc: "Equipamentos com certificação para operação em grandes mineradoras globais."
+            },
+            {
+              title: "Suporte Contínuo",
+              desc: "Time de engenharia dedicado para suporte técnico 24/7 em operação."
+            },
+            {
+              title: "Integração Comprovada",
+              desc: "Integração com sistemas de gestão de mina e despacho operacional já utilizados."
+            }].
+            map(({ title, desc }) =>
+            <div key={title} className="bg-card border border-border p-6">
                 <div className="h-0.5 w-8 bg-primary mb-4" />
                 <h3 className="font-heading text-sm font-bold text-foreground mb-2">
                   {title}
@@ -164,7 +164,7 @@ const Index = () => {
                   {desc}
                 </p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -195,49 +195,49 @@ const Index = () => {
               <img
                 src={techImg}
                 alt="Sistema LIDAR e radar do caminhão autônomo"
-                className="w-full aspect-[16/9] object-cover"
-              />
+                className="w-full aspect-[16/9] object-cover" />
+              
 
               <div className="h-0.5 bg-primary" />
             </div>
 
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                {
-                  icon: Gauge,
-                  label: "Direção Autônoma L4",
-                  desc: "Operação autônoma completa sem intervenção humana em rotas de mina.",
-                },
-                {
-                  icon: Eye,
-                  label: "Percepção LIDAR & Radar",
-                  desc: "Mapeamento 3D em tempo real do ambiente para navegação precisa e segura.",
-                },
-                {
-                  icon: Brain,
-                  label: "Tomada de Decisão por IA",
-                  desc: "Algoritmos de inteligência artificial para decisões autônomas em campo.",
-                },
-                {
-                  icon: Radio,
-                  label: "Despacho Inteligente",
-                  desc: "Otimização automática de ciclos de transporte e alocação de frota.",
-                },
-                {
-                  icon: Truck,
-                  label: "Operação Remota",
-                  desc: "Centro de controle remoto com visibilidade total da operação.",
-                },
-                {
-                  icon: BatteryCharging,
-                  label: "Troca de Bateria",
-                  desc: "Sistema de troca instantânea para operação contínua 24/7 sem paradas.",
-                },
-              ].map(({ icon: Icon, label, desc }) => (
-                <div
-                  key={label}
-                  className="bg-card border border-border p-5 hover:border-primary/40 transition-colors group"
-                >
+              {
+                icon: Gauge,
+                label: "Direção Autônoma L4",
+                desc: "Operação autônoma completa sem intervenção humana em rotas de mina."
+              },
+              {
+                icon: Eye,
+                label: "Percepção LIDAR & Radar",
+                desc: "Mapeamento 3D em tempo real do ambiente para navegação precisa e segura."
+              },
+              {
+                icon: Brain,
+                label: "Tomada de Decisão por IA",
+                desc: "Algoritmos de inteligência artificial para decisões autônomas em campo."
+              },
+              {
+                icon: Radio,
+                label: "Despacho Inteligente",
+                desc: "Otimização automática de ciclos de transporte e alocação de frota."
+              },
+              {
+                icon: Truck,
+                label: "Operação Remota",
+                desc: "Centro de controle remoto com visibilidade total da operação."
+              },
+              {
+                icon: BatteryCharging,
+                label: "Troca de Bateria",
+                desc: "Sistema de troca instantânea para operação contínua 24/7 sem paradas."
+              }].
+              map(({ icon: Icon, label, desc }) =>
+              <div
+                key={label}
+                className="bg-card border border-border p-5 hover:border-primary/40 transition-colors group">
+                
                   <Icon className="text-primary mb-3" size={20} />
                   <h3 className="font-heading text-sm font-bold text-foreground mb-1">
                     {label}
@@ -246,36 +246,36 @@ const Index = () => {
                     {desc}
                   </p>
                 </div>
-              ))}
+              )}
             </div>
           </div>
 
           {/* 3 pilars */}
           <div className="grid md:grid-cols-3 gap-px bg-border">
             {[
-              {
-                icon: Shield,
-                title: "Segurança",
-                metric: "Zero",
-                metricSub: "operadores em risco",
-                desc: "Remove completamente os operadores de ambientes perigosos, eliminando acidentes fatais nas operações de carga e transporte.",
-              },
-              {
-                icon: Gauge,
-                title: "Produtividade",
-                metric: "24/7",
-                metricSub: "operação contínua",
-                desc: "Ciclos ininterruptos com despacho otimizado por IA, eliminando tempo de espera e maximizando o volume transportado.",
-              },
-              {
-                icon: Zap,
-                title: "Redução de Custos",
-                metric: "−40%",
-                metricSub: "custo por tonelada",
-                desc: "Menor custo de energia elétrica versus diesel, redução de mão de obra e manutenção preditiva integrada.",
-              },
-            ].map(({ icon: Icon, title, metric, metricSub, desc }) => (
-              <div key={title} className="bg-card p-10">
+            {
+              icon: Shield,
+              title: "Segurança",
+              metric: "Zero",
+              metricSub: "operadores em risco",
+              desc: "Remove completamente os operadores de ambientes perigosos, eliminando acidentes fatais nas operações de carga e transporte."
+            },
+            {
+              icon: Gauge,
+              title: "Produtividade",
+              metric: "24/7",
+              metricSub: "operação contínua",
+              desc: "Ciclos ininterruptos com despacho otimizado por IA, eliminando tempo de espera e maximizando o volume transportado."
+            },
+            {
+              icon: Zap,
+              title: "Redução de Custos",
+              metric: "−40%",
+              metricSub: "custo por tonelada",
+              desc: "Menor custo de energia elétrica versus diesel, redução de mão de obra e manutenção preditiva integrada."
+            }].
+            map(({ icon: Icon, title, metric, metricSub, desc }) =>
+            <div key={title} className="bg-card p-10">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 flex items-center justify-center bg-primary/10 border border-primary/20">
                     <Icon className="text-primary" size={22} />
@@ -296,7 +296,7 @@ const Index = () => {
                   {desc}
                 </p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -319,8 +319,8 @@ const Index = () => {
               <img
                 src={truckImg}
                 alt="Caminhão autônomo elétrico de mineração"
-                className="w-full h-full object-cover min-h-[500px]"
-              />
+                className="w-full h-full object-cover min-h-[500px]" />
+              
 
               <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/20" />
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
@@ -343,17 +343,17 @@ const Index = () => {
 
               <div className="space-y-0 border border-border divide-y divide-border mb-10">
                 {[
-                  { label: "Capacidade de Carga", value: "100+ toneladas" },
-                  { label: "Bateria", value: "Até 800 kWh" },
-                  { label: "Sistema de Bateria", value: "Troca instantânea" },
-                  { label: "Autonomia", value: "Direção L4 autônoma" },
-                  { label: "Percepção", value: "LIDAR, radar e câmeras" },
-                  { label: "Aplicação", value: "Minas a céu aberto" },
-                ].map(({ label, value }) => (
-                  <div
-                    key={label}
-                    className="flex items-center justify-between px-5 py-3.5"
-                  >
+                { label: "Capacidade de Carga", value: "100+ toneladas" },
+                { label: "Bateria", value: "Até 800 kWh" },
+                { label: "Sistema de Bateria", value: "Troca instantânea" },
+                { label: "Autonomia", value: "Direção L4 autônoma" },
+                { label: "Percepção", value: "LIDAR, radar e câmeras" },
+                { label: "Aplicação", value: "Minas a céu aberto" }].
+                map(({ label, value }) =>
+                <div
+                  key={label}
+                  className="flex items-center justify-between px-5 py-3.5">
+                  
                     <span className="text-xs text-muted-foreground uppercase tracking-wider font-medium">
                       {label}
                     </span>
@@ -361,13 +361,13 @@ const Index = () => {
                       {value}
                     </span>
                   </div>
-                ))}
+                )}
               </div>
 
               <Link
                 to="/equipamentos"
-                className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors w-full"
-              >
+                className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors w-full">
+                
                 Ver especificações completas
                 <ArrowRight size={16} className="ml-3" />
               </Link>
@@ -420,12 +420,12 @@ const Index = () => {
 
             <div className="grid sm:grid-cols-2 gap-3">
               {[
-                "Caminhões autônomos elétricos",
-                "Sistemas de percepção LIDAR e radar",
-                "Despacho inteligente de frota",
-                "Operação remota segura",
-              ].map((item) => (
-                <div key={item} className="border border-border bg-secondary px-4 py-3">
+              "Caminhões autônomos elétricos",
+              "Sistemas de percepção LIDAR e radar",
+              "Despacho inteligente de frota",
+              "Operação remota segura"].
+              map((item) =>
+              <div key={item} className="border border-border bg-secondary px-4 py-3">
                   <div className="flex items-start gap-3">
                     <div className="w-5 h-5 flex items-center justify-center bg-primary/10 border border-primary/30 mt-0.5 shrink-0">
                     <Check className="text-primary" size={12} />
@@ -433,7 +433,7 @@ const Index = () => {
                     <span className="text-sm text-muted-foreground leading-relaxed">{item}</span>
                   </div>
                 </div>
-              ))}
+              )}
             </div>
           </div>
 
@@ -441,8 +441,8 @@ const Index = () => {
             <img
               src={miningImg}
               alt="Operação de mineração a céu aberto"
-              className="w-full aspect-[4/3] object-cover"
-            />
+              className="w-full aspect-[4/3] object-cover" />
+            
 
             <div className="absolute inset-0 border border-border" />
             <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
@@ -487,38 +487,38 @@ const Index = () => {
 
             <div className="grid md:grid-cols-5 gap-6">
               {[
-                {
-                  step: "01",
-                  icon: Gauge,
-                  title: "Avaliação da Operação",
-                  desc: "Avaliação das necessidades de transporte e condições operacionais da mina.",
-                },
-                {
-                  step: "02",
-                  icon: Settings,
-                  title: "Preparação de Infraestrutura",
-                  desc: "Preparação para operações autônomas e sistema de troca de baterias.",
-                },
-                {
-                  step: "03",
-                  icon: Truck,
-                  title: "Entrega dos Equipamentos",
-                  desc: "Entrega e instalação dos caminhões autônomos na operação.",
-                },
-                {
-                  step: "04",
-                  icon: Radio,
-                  title: "Integração de Sistemas",
-                  desc: "Integração com os sistemas de despacho e gestão operacional da mina.",
-                },
-                {
-                  step: "05",
-                  icon: Headphones,
-                  title: "Suporte Operacional",
-                  desc: "Treinamento, monitoramento contínuo e suporte técnico especializado.",
-                },
-              ].map(({ step, icon: Icon, title, desc }) => (
-                <div key={step} className="relative">
+              {
+                step: "01",
+                icon: Gauge,
+                title: "Avaliação da Operação",
+                desc: "Avaliação das necessidades de transporte e condições operacionais da mina."
+              },
+              {
+                step: "02",
+                icon: Settings,
+                title: "Preparação de Infraestrutura",
+                desc: "Preparação para operações autônomas e sistema de troca de baterias."
+              },
+              {
+                step: "03",
+                icon: Truck,
+                title: "Entrega dos Equipamentos",
+                desc: "Entrega e instalação dos caminhões autônomos na operação."
+              },
+              {
+                step: "04",
+                icon: Radio,
+                title: "Integração de Sistemas",
+                desc: "Integração com os sistemas de despacho e gestão operacional da mina."
+              },
+              {
+                step: "05",
+                icon: Headphones,
+                title: "Suporte Operacional",
+                desc: "Treinamento, monitoramento contínuo e suporte técnico especializado."
+              }].
+              map(({ step, icon: Icon, title, desc }) =>
+              <div key={step} className="relative">
                   <div className="w-16 h-16 mx-auto mb-5 flex items-center justify-center bg-card border border-border relative z-10">
                     <Icon className="text-primary" size={22} />
                   </div>
@@ -534,7 +534,7 @@ const Index = () => {
                     </p>
                   </div>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -547,8 +547,8 @@ const Index = () => {
             <img
               src={supportImg}
               alt="Equipe técnica de suporte Altian"
-              className="w-full aspect-[5/4] object-cover"
-            />
+              className="w-full aspect-[5/4] object-cover" />
+            
 
             <div className="absolute inset-0 border border-border" />
             <div className="absolute top-0 left-0 right-0 h-0.5 bg-primary" />
@@ -572,31 +572,31 @@ const Index = () => {
 
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                {
-                  icon: HardHat,
-                  title: "Treinamento de Operadores",
-                  desc: "Capacitação técnica completa da equipe para operação dos sistemas autônomos.",
-                },
-                {
-                  icon: Headphones,
-                  title: "Suporte Técnico 24/7",
-                  desc: "Time de engenharia disponível a qualquer momento para resolução de ocorrências.",
-                },
-                {
-                  icon: Wrench,
-                  title: "Manutenção Preventiva e Corretiva",
-                  desc: "Programas de manutenção estruturados para maximizar a disponibilidade da frota.",
-                },
-                {
-                  icon: Settings,
-                  title: "Integração com a Operação da Mina",
-                  desc: "Conexão com sistemas de gestão e despacho já utilizados na mina.",
-                },
-              ].map(({ icon: Icon, title, desc }) => (
-                <div
-                  key={title}
-                  className="p-5 bg-secondary border border-border hover:border-primary/30 transition-colors"
-                >
+              {
+                icon: HardHat,
+                title: "Treinamento de Operadores",
+                desc: "Capacitação técnica completa da equipe para operação dos sistemas autônomos."
+              },
+              {
+                icon: Headphones,
+                title: "Suporte Técnico 24/7",
+                desc: "Time de engenharia disponível a qualquer momento para resolução de ocorrências."
+              },
+              {
+                icon: Wrench,
+                title: "Manutenção Preventiva e Corretiva",
+                desc: "Programas de manutenção estruturados para maximizar a disponibilidade da frota."
+              },
+              {
+                icon: Settings,
+                title: "Integração com a Operação da Mina",
+                desc: "Conexão com sistemas de gestão e despacho já utilizados na mina."
+              }].
+              map(({ icon: Icon, title, desc }) =>
+              <div
+                key={title}
+                className="p-5 bg-secondary border border-border hover:border-primary/30 transition-colors">
+                
                   <div className="w-10 h-10 flex items-center justify-center bg-primary/10 border border-primary/20 mb-4">
                     <Icon className="text-primary" size={18} />
                   </div>
@@ -609,7 +609,7 @@ const Index = () => {
                     </p>
                   </div>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -622,8 +622,8 @@ const Index = () => {
             src={heroImg}
             alt=""
             className="w-full h-full object-cover object-top"
-            aria-hidden="true"
-          />
+            aria-hidden="true" />
+          
           <div className="absolute inset-0 bg-background/95" />
         </div>
         {/* corner accents */}
@@ -651,15 +651,15 @@ const Index = () => {
           </p>
           <Link
             to="/contato#formulario"
-            className="inline-flex items-center justify-center bg-primary text-primary-foreground px-12 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors glow-yellow"
-          >
+            className="inline-flex items-center justify-center bg-primary text-primary-foreground px-12 py-4 font-heading font-bold text-xs tracking-widest uppercase hover:bg-primary/90 transition-colors glow-yellow">
+            
             Entrar em contato com a Altian
             <ArrowRight size={16} className="ml-3" />
           </Link>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>);
+
 };
 
 export default Index;
