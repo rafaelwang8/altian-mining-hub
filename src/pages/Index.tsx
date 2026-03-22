@@ -101,7 +101,7 @@ const Index = () => {
             className="w-full h-full object-cover"
             aria-hidden="true"
           />
-          <div className="absolute inset-0 bg-background/92" />
+          <div className="absolute inset-0 bg-background/95" />
         </div>
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-16">
