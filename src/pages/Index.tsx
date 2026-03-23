@@ -19,7 +19,6 @@ import {
 import Layout from "@/components/Layout";
 import heroImg from "@/assets/hero-mine-new.jpg";
 
-import techImg from "@/assets/autonomo-l4.png";
 import excavatorImg from "@/assets/excavator-new.jpg";
 import supportImg from "@/assets/support-team-new.jpg";
 import miningImg from "@/assets/mining-operation-new.jpg";
@@ -193,7 +192,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
             <div>
               <img
-                src={techImg}
+                src="/autonomo-l4.png"
                 alt="Sistema LIDAR e radar do caminhão autônomo"
                 className="w-full aspect-[16/9] object-cover" />
               
