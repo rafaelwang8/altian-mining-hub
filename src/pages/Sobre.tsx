@@ -12,7 +12,7 @@ import {
 import Layout from "@/components/Layout";
 import heroImg from "@/assets/hero-mine-new.jpg";
 import miningImg from "@/assets/brasil.png";
-import truckImg from "@/assets/truck-rear.jpg";
+import truckImg from "@/assets/caminhao-escavadeira.png";
 import lidarImg from "@/assets/LIDAR RADAR CAM.png";
 import miningTechImg from "@/assets/mining-operation-new.jpg";
 import altianLogo from "@/assets/reduzido-fundo.png";
@@ -77,22 +77,22 @@ const Sobre = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <p className="text-xs uppercase tracking-[0.35em] text-red-500 mb-3 font-bold">Direcionadores Altian</p>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-white">Missão e Visão com mais clareza de propósito</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-bold text-white">Missão e Visão com mais clareza de propósito</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="relative overflow-hidden rounded-2xl border border-red-500/30 bg-slate-900 p-8 md:p-10 shadow-[0_0_0_1px_rgba(239,68,68,0.08)]">
-              <div className="absolute top-0 left-0 h-1 w-28 bg-red-500" />
-              <p className="text-xs uppercase tracking-[0.35em] text-red-500 mb-4 font-bold">Nossa Missão</p>
-              <p className="font-heading text-2xl md:text-3xl leading-tight text-white">
+            <div className="relative overflow-hidden rounded-2xl border border-red-500/20 bg-slate-900 p-7 md:p-8 shadow-[0_0_0_1px_rgba(239,68,68,0.05)]">
+              <div className="absolute top-0 left-0 h-1 w-24 bg-red-500" />
+              <p className="text-xs uppercase tracking-[0.3em] text-red-500 mb-4 font-bold">Nossa Missão</p>
+              <p className="text-lg md:text-xl leading-relaxed text-white font-semibold">
               Acelerar a adoção de tecnologias avançadas na mineração que protejam vidas, aumentem a produtividade e permitam
               operações mais eficientes.
               </p>
             </div>
 
-            <div className="relative overflow-hidden rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-950 p-8 md:p-10">
-              <div className="absolute top-0 left-0 h-1 w-28 bg-red-500" />
-              <p className="text-xs uppercase tracking-[0.35em] text-red-500 mb-4 font-bold">Nossa Visão</p>
-              <p className="font-heading text-2xl md:text-3xl leading-tight text-white">
+            <div className="relative overflow-hidden rounded-2xl border border-slate-700 bg-gradient-to-br from-slate-900 to-slate-950 p-7 md:p-8">
+              <div className="absolute top-0 left-0 h-1 w-24 bg-red-500" />
+              <p className="text-xs uppercase tracking-[0.3em] text-red-500 mb-4 font-bold">Nossa Visão</p>
+              <p className="text-lg md:text-xl leading-relaxed text-white font-semibold">
               Ser referência na introdução e implantação de tecnologias avançadas de mineração em operações de grande escala.
               </p>
             </div>
@@ -175,19 +175,6 @@ const Sobre = () => {
           </div>
           <div className="rounded-xl overflow-hidden border border-slate-700">
             <img src={truckImg} alt="Caminhão autônomo na mina" className="w-full h-full object-cover" />
-          </div>
-        </div>
-      </section>
-
-      {/* Setor de Mineração */}
-      <section className="section-padding bg-[#0f172a] text-slate-200">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">Foco no Setor de Mineração</h2>
-          <div className="text-sm text-slate-300 leading-relaxed">
-            <ul className="space-y-2">
-              <li className="flex items-start gap-2"><Check size={14} className="text-red-500 mt-1"/> aumento da segurança operacional</li>
-              <li className="flex items-start gap-2"><Check size={14} className="text-red-500 mt-1"/> otimização de produtividade</li>
-            </ul>
           </div>
         </div>
       </section>
