@@ -14,7 +14,7 @@ import heroImg from "@/assets/hero-mine-new.jpg";
 import miningImg from "@/assets/brasil.png";
 import truckImg from "@/assets/caminhao-escavadeira.png";
 import lidarImg from "@/assets/LIDAR RADAR CAM.png";
-import miningTechImg from "@/assets/mining-operation-new.jpg";
+import miningTechImg from "@/assets/ROLDANA.png";
 import altianLogo from "@/assets/reduzido-fundo.png";
 
 const Sobre = () => {
