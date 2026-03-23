@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import {
   ArrowRight,
   BatteryCharging,
+  Brain,
   Gauge,
   HardHat,
+  Radar,
   Truck,
   Zap,
 } from "lucide-react";
-import truckImg from "@/assets/truck-rear.jpg";
 import excavatorImg from "@/assets/centro-de-controle.png";
 import heroImg from "@/assets/hero-mine-new.jpg";
 
@@ -145,9 +146,72 @@ const Equipamentos = () => (
         </div>
 
         <div className="space-y-4">
-          <div className="relative">
-            <img src={truckImg} alt="Caminhão autônomo elétrico de mineração" className="w-full aspect-[5/4] object-cover" />
-            <div className="absolute inset-0 border border-border" />
+          <div className="relative overflow-hidden border border-border bg-[radial-gradient(circle_at_top_left,rgba(239,68,68,0.18),transparent_35%),linear-gradient(160deg,#111827_0%,#0b1220_45%,#050816_100%)] aspect-[5/4]">
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(148,163,184,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.08)_1px,transparent_1px)] bg-[size:32px_32px] opacity-30" />
+            <div className="absolute top-0 left-0 h-1 w-32 bg-primary" />
+            <div className="absolute right-6 top-6 border border-primary/30 bg-primary/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.25em] text-primary">
+              L4 Autonomy
+            </div>
+
+            <div className="relative flex h-full flex-col justify-between p-6 md:p-8">
+              <div className="max-w-sm">
+                <p className="mb-3 text-xs font-bold uppercase tracking-[0.3em] text-primary">Sistema Integrado</p>
+                <h3 className="font-heading text-3xl font-bold leading-tight text-white md:text-4xl">
+                  Caminhão autônomo elétrico para ciclos contínuos de mina
+                </h3>
+              </div>
+
+              <div className="grid gap-4">
+                <div className="grid grid-cols-[1.2fr_0.8fr] gap-4">
+                  <div className="border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+                    <div className="mb-4 flex items-center justify-between">
+                      <Truck className="text-primary" size={28} />
+                      <span className="text-xs font-bold uppercase tracking-[0.25em] text-slate-300">100t Payload</span>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="h-2 overflow-hidden bg-white/10">
+                        <div className="h-full w-[82%] bg-primary" />
+                      </div>
+                      <div className="grid grid-cols-3 gap-2 text-[11px] uppercase tracking-[0.22em] text-slate-400">
+                        <span>Radar</span>
+                        <span>Lidar</span>
+                        <span>Cameras</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="grid gap-4">
+                    <div className="border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+                      <BatteryCharging className="mb-3 text-primary" size={22} />
+                      <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-slate-400">Energia</p>
+                      <p className="mt-1 font-heading text-2xl font-bold text-white">800 kWh</p>
+                    </div>
+                    <div className="border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
+                      <Gauge className="mb-3 text-primary" size={22} />
+                      <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-slate-400">Disponibilidade</p>
+                      <p className="mt-1 font-heading text-2xl font-bold text-white">24/7</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-3 gap-4">
+                  {[
+                    { icon: Radar, label: "Percepcao", value: "360" },
+                    { icon: Brain, label: "IA Embarcada", value: "L4" },
+                    { icon: Zap, label: "Propulsao", value: "EV" },
+                  ].map(({ icon: Icon, label, value }) => (
+                    <div key={label} className="border border-white/10 bg-black/20 p-4">
+                      <div className="mb-3 flex items-center justify-between">
+                        <Icon className="text-primary" size={18} />
+                        <span className="font-heading text-xl font-bold text-white">{value}</span>
+                      </div>
+                      <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-slate-400">{label}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
             <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary" />
           </div>
 
