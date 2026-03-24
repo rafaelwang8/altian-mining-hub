@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logoImg from "@/assets/altian-logo.png";
+import logoImg from "@/assets/ALTIAN BARRA.png";
 
 const navLinks = [
 { href: "/", label: "Início" },
@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logoImg} alt="Altian" className="h-10 w-10 object-contain rounded" />
+          <img src={logoImg} alt="Altian" className="h-10 w-auto object-contain" />
         </Link>
 
         {/* Desktop */}
