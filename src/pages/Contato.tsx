@@ -55,8 +55,8 @@ const Contato = () => {
       }
 
       toast({
-        title: "Mensagem enviada",
-        description: `Recebemos seus dados e o formulário foi encaminhado para ${contactEmail}.`,
+        title: "Mensagem enviada!",
+        description: "Entraremos em contato em breve.",
       });
 
       setForm({ empresa: "", nome: "", email: "", telefone: "", localizacao: "", mensagem: "" });
