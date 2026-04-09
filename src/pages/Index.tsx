@@ -317,8 +317,7 @@ const Index = () => {
               </h2>
               <div className="industrial-border pl-5">
                 <p className="text-muted-foreground leading-relaxed text-lg">
-                  A Altian é a empresa brasileira que traz equipamentos e sistemas
-                  operacionais de mineração de próxima geração ao setor nacional.
+                  A Altian é uma empresa focada em trazer tecnologias avançadas para operações de mineração de grande escala. Somos responsáveis por todo processo, desde a importação dos equipamentos, quanto todo o suporte e assistência técnica no Brasil.
                 </p>
               </div>
             </div>
@@ -326,19 +325,12 @@ const Index = () => {
             <div className="grid sm:grid-cols-2 gap-3">
               <div className="sm:col-span-2 border border-border bg-card p-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  Com expertise em operações de mineração de grande escala,
-                  disponibilizamos tecnologia global de ponta adaptada à realidade
-                  das minas brasileiras. Nosso portfólio inclui caminhões autônomos
-                  elétricos, escavadeiras controladas remotamente e sistemas
-                  inteligentes de gestão de frota.
+                  Com mais de 25 anos de experiência em operações complexas, nosso grupo tem como objetivo apoiar mineradoras na evolução de suas operações por meio da adoção de equipamentos autônomos, eletrificação da frota e sistemas inteligentes de gestão operacional.
                 </p>
               </div>
               <div className="sm:col-span-2 border border-border bg-card p-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  Trabalhamos com as principais mineradoras do mundo para entregar
-                  operações mais seguras, produtivas e sustentáveis, eliminando a
-                  exposição de operadores a ambientes de risco e reduzindo custos
-                  operacionais por tonelada.
+                  Combinamos engenharia industrial, tecnologia de ponta e conhecimento das operações de mineração para oferecer soluções que aumentam a segurança, reduzem riscos e melhoram a produtividade.
                 </p>
               </div>
             </div>
